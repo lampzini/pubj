@@ -42,7 +42,6 @@ $(function(){
 		$('html, body').stop().animate({scrollTop:offset});
 	});
 
-
 	// typed Effect
 	var typed = $(".typed");
 	typed.typed({
@@ -89,7 +88,6 @@ $(function(){
 		overflowY: 'scroll',
 		gallery: {enabled: true}
 	});
-
 	
 });
 
