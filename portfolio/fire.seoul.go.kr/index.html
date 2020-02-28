@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<title>서울소방재난본부</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="http://www.seoul.go.kr/seoulgnb/seoul-common-gnb.css" />
+	<link rel="stylesheet" href="css/slicarousel.css">
+	<link rel="stylesheet" href="css/slicarousel_style.css">
+
+	<!--[if lt IE 9]>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slicarousel.js"></script>
+</head>
+<body>
+	<div id="skip">
+		<a href="#gnb">메뉴 바로가기</a>
+		<a href="#container">본문 바로가기</a>
+	</div>
+	<!-- 서울 gnb -->
+	<div id="seoul-common-gnb">
+		<div id="seoul-gnb-plugin">
+			<div class="seoul-gnb-holder">
+				<p class="seoul-gnb-link"><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=logo&amp;link=https://www.seoul.go.kr" target="_blank" title="새창열림" class="seoul-gnb-icon-link wise-link" data-kind="logo">서울특별시</a></p>
+				<dl class="seoul-gnb-news">
+					<dt><a href="https://www.seoul.go.kr/realmnews/in/list.do" target="_blank" title="새창열림(서울소식)" class="seoul-gnb-icon-notice">서울소식</a></dt>
+					<dd><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=hotissue&amp;link=http://news.seoul.go.kr/env/archives/505025" target="_blank" title="새창열림">2020 미세먼지 EXPO</a></dd>
+				</dl>
+				<dl class="seoul-gnb-menu">
+					<dt>주요메뉴</dt>
+					<dd><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=seoulnews&amp;link=https://www.seoul.go.kr/realmnews/in/list.do" target="_blank" title="새창열림" class="seoul-gnb-icon-menu1 wise-link" data-kind="seoulnews">서울소식</a></dd>
+					<dd><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=eungdapso&amp;link=http://eungdapso.seoul.go.kr" target="_blank" title="새창열림" class="seoul-gnb-icon-menu2 wise-link" data-kind="eungdapso">응답소</a></dd>
+					<dd><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=opengov&amp;link=http://opengov.seoul.go.kr" target="_blank" title="새창열림" class="seoul-gnb-icon-menu3 wise-link" data-kind="opengov">정보공개</a></dd>
+					<dd>
+						<button type="button" class="seoul-gnb-icon-menu4">분야별정보</button>
+						<div class="seoul-gnb-menu-section" style="display: none;">
+							<dl>
+								<dt>분야별정보</dt>
+								<dd>
+									<ul>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=citybuild&amp;link=http://news.seoul.go.kr/citybuild/" target="_blank" title="새창열림" class="wise-link" data-kind="citybuild">주택</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=economy&amp;link=http://news.seoul.go.kr/economy/" target="_blank" title="새창열림" class="wise-link" data-kind="economy">경제</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=traffic&amp;link=http://news.seoul.go.kr/traffic/" target="_blank" title="새창열림" class="wise-link" data-kind="traffic">교통</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=env&amp;link=http://news.seoul.go.kr/env/" target="_blank" title="새창열림" class="wise-link" data-kind="env">환경</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=welfare&amp;link=http://news.seoul.go.kr/welfare/" target="_blank" title="새창열림" class="wise-link" data-kind="welfare">복지</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=safe&amp;link=http://news.seoul.go.kr/safe/" target="_blank" title="새창열림" class="wise-link" data-kind="safe">안전</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=culture&amp;link=http://news.seoul.go.kr/culture/" target="_blank" title="새창열림" class="wise-link" data-kind="culture">문화</a></li>
+										<li><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=gov&amp;link=http://news.seoul.go.kr/gov/" target="_blank" title="새창열림" class="wise-link" data-kind="gov">행정</a></li>
+									</ul>
+								</dd>	
+							</dl>
+							<p><a href="//www.seoul.go.kr/sgnb/seoulgnblog.do?gid=G078&amp;kind=allservice&amp;link=https://www.seoul.go.kr/service/all.do" target="_blank" title="새창열림" class="wise-link" data-kind="allservice"><span class="seoul-gnb-icon-service"></span> 서비스 전체보기</a></p>
+							<button type="button"><span class="seoul-gnb-icon-service-close"></span><span class="hd-element">분야별 정보 닫기</span></button>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<!-- header -->
+	<header id="header">
+		<div class="head_sp">
+			<div class="inner">
+				<h1><a href="index.html"><img src="images/logo.png" alt="119서울소방 로고" /></a></h1>
+				<div id="search">
+					<form action="search.php">
+						<fieldset>
+							<legend>검색창</legend>
+							<div class="searchbox">
+								<input type="search" /><button id="search_btn" type="submit">검색</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+
+				<div id="lnb">
+					<a href="login.html" class="lnb_txt">로그인</a><a href="join.html" class="lnb_txt">회원가입</a><a href="#" class="lnb_txt lang">ENGLISH</a>
+				</div>
+
+			</div>
+		</div>
+
+		<nav class="head_gnb">
+			<div class="inner">
+				<ul id="gnb">
+					<li><a href="sub01-01.html">민원안내</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub01-01.html">민원서식</a></li>
+								<li><a href="sub01-02-01.html">전자민원</a>
+									<ul class="sub2">
+										<li><a href="sub01-02-01.html">민원상담</a></li>
+										<li><a href="https://minwon.seoul.go.kr" target="_blank" class="linkout" title="새창열림">민원신청 및 발급</a></li>
+									</ul>
+								</li>
+								<li><a href="sub01-03-01.html">다중이용업소</a>
+									<ul class="sub2">
+										<li><a href="sub01-03-01.html">완비증명절차</a></li>
+										<li><a href="sub01-03-02.html">자율안전점검</a></li>
+									</ul>							
+								</li>
+								<li><a href="sub01-04.html">건축허가동의절차</a></li>
+								<li><a href="sub01-05-01.html">화재피해주민지원센터</a>
+									<ul class="sub2">
+										<li><a href="sub01-05-01.html">지원서비스 안내</a></li>
+										<li><a href="sub01-05-02.html">화재증명원발급</a></li>
+										<li><a href="sub01-05-03.html">구호물품등생활지원</a></li>
+										<li><a href="sub01-05-04.html">의료지원</a></li>
+										<li><a href="sub01-05-05.html">공무원의 재해부조금</a></li>
+										<li><a href="sub01-05-06.html">의사상자의 보호</a></li>
+										<li><a href="sub01-05-07.html">국세의 지원</a></li>
+										<li><a href="sub01-05-08.html">지방세의 지원</a></li>
+										<li><a href="sub01-05-09.html">회재보험 정보제공</a></li>
+										<li><a href="sub01-05-10.html">가스사고피해자 책임보험</a></li>
+										<li><a href="sub01-05-11.html">불에 탄 화폐의 교환</a></li>
+										<li><a href="sub01-05-12.html">불에 탄 신분증의 재교부</a></li>
+									</ul>		
+								</li>
+								<li><a href="sub01-06.html">소방시설불법행위신고</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub02-01.html">참여교육</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub02-01.html">칭찬합시다</a></li>
+								<li><a href="sub02-02-01.html">소방안전교육</a>
+									<ul class="sub2">
+										<li><a href="sub02-02-01.html">소방서안전체험교실</a></li>
+										<li><a href="sub02-02-02.html">이동안전차량 체험교육</a></li>
+										<li><a href="sub02-02-03.html">출장 소방안전교육</a></li>
+										<li><a href="sub02-02-04.html">소방안전교육 예약신청</a></li>
+									</ul>
+								</li>
+								<li><a href="sub02-03-01.html">안전체험관 예약</a>
+									<ul class="sub2">
+										<li><a href="sub02-03-01.html">안전체험관 안내</a></li>
+										<li><a href="https://fire.seoul.go.kr/boramea" target="_blank" class="linkout" title="새창열림">보라매 안전체험관</a></li>
+										<li><a href="https://fire.seoul.go.kr/gwangnaru" target="_blank" class="linkout" title="새창열림">광나루 안전체험관</a></li>
+									</ul>
+								</li>
+								<li><a href="sub02-04.html">다중이용업소 안전교육</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub03-01.html">뉴스/공지</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub03-01.html">공지사항</a></li>
+								<li><a href="sub03-02.html">입찰공고</a></li>
+								<li><a href="sub03-03.html">수의계약내역</a></li>
+								<li><a href="sub03-04.html">보도자료</a></li>
+								<li><a href="sub03-05.html">채용정보</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub04-01.html">안전정보</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="#">안전정보웹툰</a>
+									<ul class="sub2">
+										<li><a href="#">화재배상책임보험</a></li>
+										<li><a href="#">산행과 캠핑 안전</a></li>
+										<li><a href="#">물놀이 안전</a></li>
+										<li><a href="#">화재시 대피요령</a></li>
+										<li><a href="#">다중이용업소 안전교육</a></li>
+										<li><a href="#">침수지역 감전사고 안전</a></li>
+										<li><a href="#">승강기사고 안전</a></li>
+										<li><a href="#">소방차 길터주기</a></li>
+										<li><a href="#">지하철 비상 상황</a></li>
+										<li><a href="#">바이러스 감염병 예방</a></li>
+										<li><a href="#">지진발생시 대처요령</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">자연재난</a>
+									<ul class="sub2">
+										<li><a href="#">폭염</a></li>
+										<li><a href="#">지진</a></li>
+										<li><a href="#">지진해일</a></li>
+										<li><a href="#">지진발생시 행동요령</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">사회재난</a>
+									<ul class="sub2">
+										<li><a href="#">생화학테러시 대처요령</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">생활안전</a>
+									<ul class="sub2">
+										<li><a href="#">위기대처방법</a></li>
+										<li><a href="#">안전사고대처요령</a></li>
+										<li><a href="#">안전산행정보</a></li>
+										<li><a href="#">등산로 및 표지판 위치</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">응급처치 메뉴얼가이드</a>
+									<ul class="sub2">
+										<li><a href="#">기본심폐소생술</a></li>
+										<li><a href="#">이물질에 의한 기도폐쇄</a></li>
+										<li><a href="#">출혈</a></li>
+										<li><a href="#">쇼크</a></li>
+										<li><a href="#">돌연사</a></li>
+										<li><a href="#">뇌졸중(뇌중풍)</a></li>
+										<li><a href="#">심근경색</a></li>
+										<li><a href="#">생활응급처치</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">위험물판정</a>
+									<ul class="sub2">
+										<li><a href="#">메뉴얼/가이드</a></li>
+										<li><a href="#">소방시설 점검 표준 메뉴얼</a></li>
+									</ul>	
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub05-01-01.html">홍보/미디어</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub05-01-01.html">상징물</a>
+									<ul class="sub2">
+										<li><a href="sub05-01-01.html">BI</a></li>
+										<li><a href="sub05-01-02.html">캐릭터</a></li>
+										<li><a href="sub05-01-03.html">소방통합캐릭터(영웅이)</a></li>
+									</ul>	
+								</li>
+								<li><a href="sub05-02.html">영상자료</a></li>
+								<li><a href="sub05-03.html">홍보자료</a></li>
+								<li><a href="sub05-04.html">소방공모전</a></li>
+								<li><a href="sub05-05.html">소방차길터주기</a></li>
+								<li><a href="http://ebook.seoul.go.kr/html/book/index/gallery/latest/19/1" target="_blank" class="linkout" title="새창열림">아이러브119</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub06-01.html">정보공개</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub06-01.html">감사정보</a></li>
+								<li><a href="sub06-02.html">업무추진비</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="sub07-01.html">본부소개</a>
+						<div class="sub_area">
+							<ul class="sub nosp">
+								<li><a href="sub07-01.html">인사말</a></li>
+								<li><a href="sub07-02.html">조직도</a></li>
+								<li><a href="sub07-03.html">찾아오시는길</a></li>
+								<li><a href="sub07-04.html">소방서비스헌장</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+	</header>
+	<!-- // 헤더 -->
+
+	<section id="visual">
+		<h2 class="blind">비쥬얼 슬라이더</h2>
+		<div class="the_slider"></div>
+		<!-- 
+		<ul>
+			<li><img src="images/visual_01.jpg" alt="안전하고 행복한 도시 서울, 그 중심에 서울소방재난본부가 있습니다." /></li>
+		</ul> -->
+	</section>
+	<!-- // 비쥬얼 슬라이더 -->
+
+	<section id="container" class="clearfix">
+		<section id="cont1">
+			<h2 class="emer_title">안전대처 요령</h2>
+			<ul class="emer">
+				<li><a href="#"><i class="ico_emer_set ico_emer_01"></i><span class="emer_txt">불이 났을때</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_02"></i><span class="emer_txt">연기 속<br/>대피요령</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_03"></i><span class="emer_txt">화재 건물속에<br/>갇혔을때</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_04"></i><span class="emer_txt">지진 발생 시<br/>행동요령</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_05"></i><span class="emer_txt">출혈</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_06"></i><span class="emer_txt">기본심폐소생술</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_07"></i><span class="emer_txt">이물질에 의한<br/>기도폐쇄</span></a></li>
+				<li><a href="#"><i class="ico_emer_set ico_emer_08"></i><span class="emer_txt">도움이 되는<br/>소방시설</span></a></li>
+			</ul>
+		</section>
+		<!-- // 안전대처 요령 -->
+		<section id="cont2" class="content">
+			<h2 class="blind">텝게시판</h2>
+			<ul class="tab_board clearfix">
+				<li><a href="sub03-01.html" class="active">공지사항</a>
+
+					<div class="tab_list active">
+						<ul>
+							<li class="btn_more"><a href="sub03-01.html" class="btn_more" title="공지사항 더보기">+</a></li>
+							<li><a href="sub03-01.html">2020년 (서울) 구급장비 품평회 개최(알림)</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">서울종합방재센터 단기근로자 채용 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">소방장비정비센터 지정 신청 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">서울소방재난본부 직장어린이집 위탁운영자 선정결과 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">화재안전특별조사 결과 안전관리 우수대상물 공개</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">간이스프링클러 설치 지원사업 조기추진 안내</a><span>2020-01-08</span></li>
+							<li><a href="sub03-01.html">인명구조견 (모란,맥) 무상분양 공고 알림</a><span>2020-01-08</span></li>
+						</ul>
+					</div>
+				
+				</li>
+				<li><a href="sub03-04.html">보도자료</a>
+
+					<div class="tab_list">
+						<ul>
+							<li class="btn_more"><a href="sub03-04.html" class="btn_more" title="보도자료 더보기">+</a></li>
+							<li><a href="sub03-04.html">서초소방서 주택용 소방시설 무상보급 업무협약 체결</a><span>2020-01-08</span></li>
+							<li><a href="sub03-04.html">몸짱소방관, 화상환자에게 희망을 전하는 산타로 변신</a><span>2020-01-08</span></li>
+							<li><a href="sub03-04.html">서울시, 제25회 소방안전 작품공모전 개최</a><span>2020-01-08</span></li>
+						</ul>
+					</div>
+
+				</li>
+				<li><a href="sub03-05.html">채용정보</a>
+
+					<div class="tab_list">
+						<ul>
+							<li class="btn_more"><a href="sub03-05.html" class="btn_more" title="채용정보 더보기">+</a></li>
+							<li><a href="sub03-05.html">서울종합방재센터 대체인력풀 채용 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">2020년도 서울특별시 소방공무원 신규채용 일정 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">서울특별시 일반임기제공무원(구급지도의사, 구급지도교수) 채용 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">서울종합방재센터 단기근로자 채용 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">화재안전특별조사 기간제 근로자 최종(추가) 합격자 공고문(서초소방서)</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">화재안전특별조사 기간제근로자 채용 최종 합격 등 공고(서초소방서)</a><span>2020-01-08</span></li>
+							<li><a href="sub03-05.html">(강서소방서) 화재안전특별조사 기간제근로자(조사보조) 추가 채용 공고</a><span>2020-01-08</span></li>
+						</ul>
+					</div>
+
+				</li>
+				<li><a href="sub03-02.html">입찰공고</a>
+
+					<div class="tab_list">
+						<ul>
+							<li class="btn_more"><a href="sub03-02.html" class="btn_more" title="입찰공고 더보기">+</a></li>
+							<li><a href="sub03-02.html">서울소방재난본부 직장어린이집 위탁운영체 모집 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">강서소방서 공고 제2019-22호 소방안전교실 개선사업 전기공사</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">서울특별시 강서소방서 공고 제2019-21호 강서소방서 내진성능보강 및 다목적 소방훈련장 증축 소방시설공사 입찰공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">불용소방차량(예방점검차) 입찰 공고 제2019-16호</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">불용 차량(재난지휘차,장비운반차) 매각 입찰 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">소방차량[굴절사다리] 성능개선 수리 전자공개수의계약 공고</a><span>2020-01-08</span></li>
+							<li><a href="sub03-02.html">헬기 VHF무전기 개조장착작업</a><span>2020-01-08</span></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- // 게시판 -->
+		<section id="cont3" class="content">
+			<h2>팝업뉴스</h2>
+			<ul id="control_card" class="control">
+				<li class="btn_prev_card" title="이전이미지 보기"><a href="#">prev</a>	</li>
+				<li class="btn_next_card" title="다음이미지 보기"><a href="#">next</a>	</li>
+			</ul>
+			<div id="popnews">
+				<ul class="clearfix">
+					<li>
+						<p class="card_tit">화재안전특별조사</p>
+						<a href="#"><img src="images/cardnews_01.jpg" alt="화재안전특별조사" /></a>
+					</li>
+					<li>
+						<p class="card_tit">화재안전특별조사 결과 안전관리 우수대상 공개</p>
+						<a href="#"><img src="images/cardnews_02.jpg" alt="화재안전특별조사 결과 안전관리 우수대상 공개" /></a>
+					</li>
+ 					<li>
+						<p class="card_tit">열정과 패기로 가득찬 당신의 도전을 기다립니다.</p>
+						<a href="#"><img src="images/cardnews_03.gif" alt="열정과 패기로 가득찬 당신의 도전을 기다립니다." /></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- // 팝업뉴스 -->
+		<section id="cont4" class="content">
+			<h2 class="blind">민원서비스</h2>
+			<ul class="minwon">
+				<li><a href="sub01-01.html"><i class="ico_minwon_set ico_minwon_01"></i><span class="minwon_txt">민원서식 안내</span></a></li>
+				<li><a href="https://minwon.seoul.go.kr" target="_blank"><i class="ico_minwon_set ico_minwon_02"></i><span class="minwon_txt">민원신청및 발급</span></a></li>
+				<li><a href="#"><i class="ico_minwon_set ico_minwon_03"></i><span class="minwon_txt">다중이용업소 안전점검</span></a></li>
+				<li><a href="#"><i class="ico_minwon_set ico_minwon_04"></i><span class="minwon_txt">다중이용업소교육일정</span></a></li>
+				<li><a href="#"><i class="ico_minwon_set ico_minwon_05"></i><span class="minwon_txt">소방시설 불법행위 신고</span></a></li>
+				<li><a href="#"><i class="ico_minwon_set ico_minwon_06"></i><span class="minwon_txt">칭찬합시다</span></a></li>
+			</ul>
+		</section>
+		<!-- // 민원서비스 -->
+		<section id="cont5" class="content">
+			<h2>홍보미디어</h2>
+			<ul id="control_media" class="control">
+				<li class="btn_prev_media" title="이전이미지 보기">	<a href="#">prev</a>	</li>
+				<li class="btn_next_media" title="다음이미지 보기">	<a href="#">next</a>	</li>
+			</ul>
+			<div id="mediabox">
+				<ul class="clearfix">
+					<li><a href="#"><img src="images/media_001.jpg" alt="대피가.. 생명이 최우선 입니다!" /></a></li>
+					<li><a href="#"><img src="images/media_002.jpg" alt="화재경보장치 설치 캠페인 홍보영상" /></a></li>
+					<li><a href="#"><img src="images/media_003.jpg" alt="서울특별시 소방재난본부 홍보영상" /></a></li>
+					<li><a href="#"><img src="images/media_004.jpg" alt="소방행정타운 홍보영상" /></a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- // 홍보미디어 -->
+		<section id="cont6" class="content">
+			<h2>체험교육</h2>
+			<ul>
+				<li><a href="#">소방 안전 교육</a></li>
+				<li><a href="https://fire.seoul.go.kr/boramea" target="_blank" class="outLink" title="새창열림">보라매 안전체험관</a></li>
+				<li><a href="https://fire.seoul.go.kr/gwangnaru" target="_blank" class="outLink" title="새창열림">광나루 안전체험관</a></li>
+			</ul>
+		</section>
+		<!-- // 체험교육 -->
+	</section>
+	<!-- // 본문 -->
+
+	<footer id="footer">
+		<div id="link" class="clearfix">
+			<h2 class="blind">관련사이트링크</h2>
+			<ul class="linkbox">
+				<li>
+					<form action="#" name="station_link" id="station_link">
+						<fieldset>
+							<legend>소방서 링크</legend>
+							<select name="addr" class="link_opt">
+								<option value="" selected="selected">소방서 바로가기</option>
+								<option value="https://fire.seoul.go.kr/knfs">강남소방서</option>
+								<option value="https://fire.seoul.go.kr/kangdong">강동소방서</option>
+								<option value="https://fire.seoul.go.kr/gangbuk">강북소방서</option>
+								<option value="https://fire.seoul.go.kr/gangseo">강서소방서</option>
+								<option value="https://fire.seoul.go.kr/gwan-ak">관악소방서</option>
+								<option value="https://fire.seoul.go.kr/gwangjin">광진소방서</option>
+								<option value="https://fire.seoul.go.kr/guro">구로소방서</option>
+								<option value="https://fire.seoul.go.kr/nowon">노원소방서</option>
+							</select>
+							<input type="button" title="새창열림" value="이동" onclick="selectURL(station_link)" class="btn_link" />
+						</fieldset>						
+					</form>
+				</li>
+				<li>
+					<form action="#" name="rel_link" id="rel_link">
+						<fieldset>
+							<legend>유관기관 바로가기</legend>
+							<select name="addr" class="link_opt">
+								<option value="" selected="selected">유관기관 바로가기</option>
+								<option value="http://www.nfa.go.kr/">소방청</option>
+								<option value="http://www.119.go.kr/">119안전신고센터</option>
+								<option value="http://www.nfsa.go.kr/">중앙소방학교</option>
+								<option value="https://www.focu.or.kr/">대한소방공제회</option>
+							</select>
+							<input type="button" title="새창열림" value="이동" onclick="selectURL(rel_link)" class="btn_link" />
+						</fieldset>						
+					</form>
+				</li>
+				<li>
+					<form action="#" name="disaster_link" id="disaster_link">
+						<fieldset>
+							<legend>재해구제기관 바로가기</legend>
+							<select name="addr" class="link_opt">
+								<option value="">재해구제기관 바로가기</option>
+								<option value="https://www.smpa.go.kr/">서울지방경찰청</option>
+								<option value="http://www.sisul.or.kr/">시설관리공단</option>
+								<option value="http://www.kogas.or.kr/">한국가스공사</option>
+								<option value="http://www.kgs.or.kr/">한국가스안전공사</option>
+								<option value="http://www.kesco.or.kr/">한국전기안전공사</option>
+								<option value="http://home.kepco.co.kr/">한국전력공사</option>
+								<option value="https://www.kt.com/">KT</option>
+							</select>
+							<input type="button" title="새창열림" value="이동" onclick="selectURL(disaster_link)" class="btn_link" />
+						</fieldset>						
+					</form>				
+				</li>
+				<li>
+					<form action="#" name="prevent_link" id="prevent_link">
+						<fieldset>
+							<legend>방재정보기관 바로가기</legend>
+							<select name="addr" class="link_opt">
+								<option value="">방재정보기관 바로가기</option>
+								<option value="">기상청</option>
+								<option value="">국가수자원관리종합정보시스템</option>
+								<option value="">한강홍수통제소</option>
+								<option value="">종합교통정보센터</option>
+								<option value="">교통안전공단</option>
+								<option value="">서울상수도사업본부</option>
+								<option value="">응급의료포털 E-Gen</option>
+								<option value="">서울적십자병원</option>
+							</select>
+							<input type="button" title="새창열림" value="이동" onclick="selectURL(prevent_link)" class="btn_link" />
+						</fieldset>						
+					</form>					
+				</li>
+				<li class="to_top"><a href="#top">TOP</a></li>
+			</ul>
+		</div>
+
+		<div id="f_menu">
+			<div class="inner">
+				<ul>
+					<li><a href="sub08-01.html">개인정보처리방침</a></li>
+					<li><a href="sub08-02.html">119구급차 영상정보처리기기 관리운영지침</a></li>
+					<li><a href="sub08-03.html">119행정정보시스템 개인정보 위탁처리 안내</a></li>
+					<li><a href="sub08-04.html">이메일무단수집거부</a></li>
+					<li><a href="sub07-03.html">찾아오시는길</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="f_cont">
+			<div class="inner">
+				<h2 class="f_logo"><img src="images/f_logo.png" alt="119서울소방 로고" /></h2>
+				<div class="addr">
+					<em>(우)04628 서울특별시 중구 퇴계로 26길 52 (예장동)</em> <br/>
+					대표전화 (주간) 02-3706-1319 (야간) 02-3706-1200
+				</div>
+				<p class="copyright">COPYRIGHT &copy; 서울소방재난본부. ALL RIGHTS RESERVED.</p>
+				<div class="wa"><img src="images/wa_mark.png" alt="과학기술정보통신부 웹접근성승인" /></div>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		$('div.the_slider').my_slider();
+	</script>
+
+</body>
+</html>
