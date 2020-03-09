@@ -1,0 +1,109 @@
+/* #mWrap {position:relative} */
+html.open {overflow:hidden}
+
+/* header : [상단로고 + 검색창 + mGnb] */
+#mHeader {position:fixed;width:100%;background:#fff;top:0;transition:top 0.5s ease;-webkit-transition:top 0.5s ease;-moz-transition:top 0.5s ease;-o-transition:top 0.5s ease;z-index:100}		/* 나중에 처리해야 할 부분임(상단에 공백) */
+#mHeader nav {position:relative}
+#mHeader nav .logo {margin:0 auto;width:200px;height:55px;background:url(../images/yp_logo.png) no-repeat;background-size:200px auto;text-indent:-9999px}
+#mHeader nav .logo a {display:block;width:100%;height:100%}
+#mHeader nav .allMenuIco {position:absolute;top:15px;left:10px;width:32px;height:32px;background:url(../images/ico_bot01_cateall.png) no-repeat center;background-size:32px auto;text-indent:-9999em}
+#mHeader nav .myPage {position:absolute;top:15px;right:10px;width:32px;height:32px}
+#mHeader nav .myPage a {display:block;width:100%;height:100%;background:url(../images/ico_bot04_my.png) no-repeat center;background-size:32px auto;text-indent:-9999em}
+
+#mHeader nav .searchBox {text-align:center;margin-top:5px}
+#mHeader nav .searchBox input {height:36px;width:95%;border-radius:6px;border-color:#7199ca;background:url(../images/ico_bot02_search.png) no-repeat 100% 0;background-size:30px}
+
+/* 상단 메뉴바 mGnb */
+#mHeader nav #mGnb {padding:5px 10px;width:100%;background:#fff;border-bottom:1px solid #efefef}
+#mHeader nav #mGnb ul li {float:left;text-align:center;height:35px;line-height:35px;overflow:hidden}
+#mHeader nav #mGnb ul li a {font-size:16px;font-weight:400}
+#mHeader nav #mGnb ul li:nth-child(1) {width:10%}
+#mHeader nav #mGnb ul li:nth-child(2) {width:35%}
+#mHeader nav #mGnb ul li:nth-child(3) {width:20%}
+#mHeader nav #mGnb ul li:nth-child(4) {width:20%}
+#mHeader nav #mGnb ul li:nth-child(5) {width:15%}
+#mHeader nav #mGnb ul li.on {border-bottom:2px solid #7199ca}
+#hArea {height:140px;background:#fff}
+
+/* 하단고정 네비게이션바 : naviBar */
+#naviBar {width:100%;z-index:9997;bottom:-1px;height:50px;line-height:50px;position:fixed;background:#fff;border-top:1px solid #efefef;transition:bottom 0.5s ease;-webkit-transition:bottom 0.5s ease;-moz-transition:bottom 0.5s ease;-o-transition:bottom 0.5s ease}
+#naviBar ul li {float:left;width:20%;text-align:center}
+#naviBar ul li a {width:100%;vertical-align:top;display:inline-block;text-indent:-9999em}
+#naviBar ul li:nth-child(1) {background:url(../images/ico_bot01_cateall.png) no-repeat center;background-size:33px;text-indent:-9999em}
+#naviBar ul li:nth-child(2) {background:url(../images/ico_bot02_search.png) no-repeat center;background-size:33px;text-indent:-9999em}
+#naviBar ul li:nth-child(3) a {background:url(../images/ico_bot03_home.png) no-repeat center;background-size:33px;text-indent:-9999em}
+#naviBar ul li:nth-child(4) a {background:url(../images/ico_bot04_my.png) no-repeat center;background-size:33px;text-indent:-9999em}
+#naviBar ul li:nth-child(5) a {background:url(../images/ico_bot05_top.png) no-repeat center;background-size:33px;text-indent:-9999em}
+
+/* side Navigation */
+.bkCover {width:100%;height:100%;position:fixed;top:0;left:0;background-color:rgba(0,0,0,0.8);z-index:9998;display:none}
+.bkCover.open {display:block}
+
+#sideMenuWrap {width:100%;height:100%;position:fixed;overflow:hidden;top:0;left:-2000px;z-index:9999;transition:left 0.5s ease;-webkit-transition:left 0.5s ease;-moz-transition:left 0.5s ease;-o-transition:left 0.5s ease}
+#sideMenuWrap.open {left:0}
+
+#sideMenuWrap #sideBox {width:105%;height:100%;overflow-y:scroll}
+#sideMenuWrap #sideBox #sideNavi {width:80%;float:left;background:#fff}
+#sideBox .closeSide {float:right;width:20%;height:100%;background:url("../images/ico_close.png") no-repeat 10px 10px;background-size:50px 50px;text-indent:-9999em;z-index:9999}
+
+#sideNavi .sideMember {height:40px;line-height:20px}
+#sideNavi .sideMember ul li {float:left;margin-right:10px;margin-top:10px}
+#sideNavi .sideMember .login a {background:#7199ca;color:#fff;margin-left:10px;width:70px;height:20px;border-radius:6px;text-align:center;font-size:12px}
+#sideNavi .sideMember .join a {color:#7199ca;border:1px solid #7199ca;width:70px;height:20px;border-radius:6px;text-align:center;font-size:12px}
+#sideNavi .sideMember a {display:inline-block;width:100%;height:100%}
+
+#sideNavi .sideMyMenu {width:100%}
+#sideNavi .sideMyMenu li {float:left;width:25%;height:85px;text-align:center;background:#7199ca}
+#sideNavi .sideMyMenu li a {width:100%;height:65px;display:block}
+#sideNavi .sideMyMenu li span {display:block;color:#fff;font-size:11px}
+#sideNavi .sideMyMenu li:nth-child(1) a {background:url(../images/ico_side01_cart.png) no-repeat center;background-size:45px}
+#sideNavi .sideMyMenu li:nth-child(2) a {background:url(../images/ico_side02_deliv.png) no-repeat center;background-size:45px}
+#sideNavi .sideMyMenu li:nth-child(3) a {background:url(../images/ico_side03_store.png) no-repeat center;background-size:45px}
+#sideNavi .sideMyMenu li:nth-child(4) a {background:url(../images/ico_side04_now.png) no-repeat center;background-size:45px}
+
+#sideNavi h2 {font-size:16px;padding-top:30px;padding-left:10px;padding-bottom:5px}
+
+#sideNavi .classifyTit {color:#aaaa00;border-bottom:1px solid #aaaa00}
+#sideNavi .bookClassify {padding-left:10px}
+#sideNavi .bookClassify li {float:left;width:50%;margin-top:10px}
+#sideNavi .bookClassify li a {display:block;width:100%;font-size:14px}
+
+#sideNavi .sellerTit {color:#ff9900;border-bottom:1px solid #ff9900}
+#sideNavi .bookSeller {padding-left:10px}
+#sideNavi .bookSeller li {margin-top:10px}
+#sideNavi .bookSeller li a {display:block;width:100%;font-size:14px}
+#sideNavi .subGo {float:right;text-indent:-9999em;background:url(../images/ico_more.png) no-repeat 50% 50%;background-size:5px 7px;width:10px;margin-right:10px}
+
+#sideNavi .famTit {color:#aaaaaa;border-bottom:1px solid #aaaaaa}
+#sideNavi .bookFam {paddign-left:10px}
+#sideNavi .bookFam li a {display:block;width:100%;font-size:14px}
+
+#sideNavi .bookFam {width:100%;padding-bottom:15px}
+#sideNavi .bookFam li {text-indent:-9999em; height:auto;margin-bottom:5px}
+#sideNavi .bookFam li a {width:100%;height:40px;display:block;color:#fff;font-size:12px}
+#sideNavi .bookFam li:nth-child(1) a {background:url(../images/bnr_side01_readingrak.jpg) no-repeat center;background-size:95% auto}
+#sideNavi .bookFam li:nth-child(2) a {background:url(../images/bnr_side02_sidefam_justoon.jpg) no-repeat center;background-size:95% auto}
+#sideNavi .bookFam li:nth-child(3) a {background:url(../images/bnr_side03_gifticon.jpg) no-repeat center;background-size:95% auto}
+
+/* footer */
+footer {width:100%}
+footer {padding-bottom:20px;background:#e5e5e5}
+footer .footMenu li {background:#fff;float:left;width:33.3%;height:40px;line-height:40px;text-align:center}
+footer .footMenu li a {display:inline-block;width:90%;font-size:12px;color:#555}
+
+footer .footCom {font-size:14px;font-weight:bold;color:#333;padding:20px 0;text-align:center}
+
+footer .footCont p {font-size:12px;color:#999;line-height:18px;text-align:center}
+footer .footConfirm {padding:20px}
+footer .footConfirm a {color:#999}
+
+/* 서브 페이지 전용 헤더 */
+body {background:#fff}
+#subHeader {background:#fff;position:fixed;top:0;width:100%;height:45px;line-height:45px;border-bottom:1px solid #e5e5e5;z-index:99999}
+#subHeader #subNavi {position:relative}
+#subHeader #subNavi .pTitle {margin:0 auto;;text-align:center;width:90%;overflow:hidden;font-size:24px}
+#subHeader #subNavi .back {position:absolute;top:10px;left:15px;width:30px}
+#subHeader #subNavi .back a {display:block;width:100%;background:url(../images/back.png) no-repeat;background-size:15px;text-indent:-9999em}
+#subHeader #subNavi .home {position:absolute;top:10px;right:15px;width:30px}
+#subHeader #subNavi .home a {display:block;width:100%;background:url(../images/home_icon.png) no-repeat;background-size:30px;text-indent:-9999em}
+#shArea {height:45px;background:#fff}
