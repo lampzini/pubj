@@ -1,0 +1,60 @@
+.arrows span{
+    position: absolute;
+    z-index: 10;
+    top: 47%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.25, 0.1, 0, 1.16);
+}
+
+.arrows span svg{
+    fill: rgba(255, 255, 255, 0.3);
+    transition: all 200ms ease;
+}
+
+.arrows span.prev{
+    left: 10%;
+}
+
+.arrows span.next{
+    right: 10%;
+}
+
+.arrows span:hover svg{
+    fill: rgba(255, 255, 255, 1);
+    transform: scale(1.2)
+}
+
+.dot_nav{
+    display: block;
+    height: 15px;
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+	 background:rgba(50, 50, 50, 1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    border-radius: 50%;
+    margin: 0px 5px;
+    transition: all 250ms ease;
+}
+
+.dot:hover{
+    background: transparent;
+    cursor: pointer;
+}
+
+.dot.active{
+    background: rgba(12, 130, 233, 1);
+    border-color: rgba(255, 255, 255, 0.5);
+	 width:40px;
+	 border-radius:15px;
+}

@@ -1,0 +1,58 @@
+/* index */
+#container .subGo {float:right;text-indent:-9999em;background:url(../images/ico_more.png) no-repeat 50% 50%;background-size:12px 15px;width:12px;margin-right:0px}
+#container .sectBox {content:'';display:block;clear:both;margin-bottom:10px;background:#fff;padding-top:20px}
+#container .subTit {font-size:18px;margin:0 10px;padding-bottom:5px;color:#555;border-bottom:1px solid #999;margin-bottom:20px}
+
+/* visual */
+
+/* 책정보 공통 */
+#container .singleBook > ul {padding:0 10px}
+#container .dualBook > ul {padding:0 10px}
+
+#container .bookImg {margin-bottom:5px}
+#container .bookName {height:38px;overflow:hidden;font-size:16px;font-weight:bold;color:#7199ca}
+#container .bookCont {font-size:12px;line-height:18px;margin-bottom:5px;overflow:hidden}
+#container .bookGroup {font-size:12px}
+#container .bookAuth {font-size:12px;padding-bottom:5px}
+#container .singleBook .bookAuth:after {content:' | ';padding:0 5px}
+#container .bookPrice {font-size:16px;color:#333;font-weight:bold;float:left}
+#container .bookSale {font-size:16px;color:#f00;font-weight:bold;float:right}
+
+#event .more {height:40px;text-align:center;line-height:40px;background:url(../images/ico_more2.png) no-repeat 57% 54%;background-size:13px;color:#ccc;font-size:13px;font-weight:bold;border-top:1px solid #efefef;;border-bottom:1px solid #efefef}
+#event .more.off {background:url(../images/ico_less2.png) no-repeat 56% 54%;background-size:13px}
+
+
+/* 새로나온 책 */
+#container .singleBook .newBook li {width:100%;padding:10px 0;border-bottom:1px solid #eee;text-align:center}
+#container .singleBook .newBook li:after {content:'';display:block;clear:both}
+#container .singleBook .newBook li a {width:100%}
+#container .singleBook .newBook li .bookImg {float:left;width:35%;text-align:right}
+#container .singleBook .newBook li .bookImg img {width:95%;border:1px solid #7199ca}
+#container .singleBook .newBook li .bookInfo {float:right;padding:0 3%;margin-top:5px;width:65%;text-align:justify}
+#container .singleBook .bookGroup {color:#7199ca}
+.newBook2 {display:none}
+
+/* 베스트셀러 */
+#container .dualBook .bestBook {border-bottom:1px solid #eee}
+#container .dualBook .bestBook li {float:left;width:50%;padding-bottom:10px;margin-top:20px}
+#container .dualBook .bestBook li a {width:100%}
+#container .dualBook .bestBook li a .bookImg {width:100%;text-align:center}
+#container .dualBook .bestBook li a .bookImg img {width:90%;border:1px solid #aa0}
+#container .dualBook .bestBook li a .bookInfo {padding:0 5%}
+#container .dualBook .bestBook .bookName {color:#aa0}
+.bestBook2 {display:none}
+
+/* 스테디셀러 */
+#container .dualBook .steadyBook {border-bottom:1px solid #eee}
+#container .dualBook .steadyBook li {float:left;width:50%;padding-bottom:10px;margin-top:20px}
+#container .dualBook .steadyBook li a {width:100%}
+#container .dualBook .steadyBook li a .bookImg {width:100%;text-align:center}
+#container .dualBook .steadyBook li a .bookImg img {width:90%;border:1px solid #f96}
+#container .dualBook .steadyBook li a .bookInfo {padding:0 5%}	
+#container .dualBook .steadyBook .bookName {color:#f96}
+.steadyBook2 {display:none}
+
+
+/* 이미지베너 */
+#container .adbnr {width:100%}
+#container .adbnr img {width:100%}

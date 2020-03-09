@@ -1,0 +1,105 @@
+/* visual */
+#visual {width:100%;height:500px;background:url(../images/visual_01.jpg) no-repeat center;background-position:center}
+
+/* emergency */
+#cont1 {width:1200px;height:340px;margin-top:30px;background:#f9f9f9}
+#cont1 h2.emer_title {border-bottom:1px solid #eee}
+#cont1 ul.emer {margin-top:40px}
+#cont1 ul.emer li {width:12.5%;float:left;text-align:center}
+#cont1 ul.emer li a {display:block}
+#cont1 ul.emer li a .emer_txt {margin-top:20px;color:#555;font-size:14px;font-weight:500}
+#cont1 ul.emer li a .ico_emer_set {display:block;width:100px;height:100px;margin:0 auto;border-radius:50%;background:rgba(255,255,255,0.5) url(../images/ico_emer_set.png) no-repeat 0 0;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s ease-in-out}
+
+#cont1 ul.emer li a .ico_emer_01 {background-position:0 0}
+#cont1 ul.emer li a .ico_emer_02 {background-position:-135px 0}
+#cont1 ul.emer li a .ico_emer_03 {background-position:-270px 0}
+#cont1 ul.emer li a .ico_emer_04 {background-position:-405px 0}
+#cont1 ul.emer li a .ico_emer_05 {background-position:-540px 0}
+#cont1 ul.emer li a .ico_emer_06 {background-position:-675px 0}
+#cont1 ul.emer li a .ico_emer_07 {background-position:-810px 0}
+#cont1 ul.emer li a .ico_emer_08 {background-position:-945px 0}
+
+#cont1 ul.emer li a:hover .ico_emer_01 {background-position:0 -135px}
+#cont1 ul.emer li a:hover .ico_emer_02 {background-position:-135px -135px}
+#cont1 ul.emer li a:hover .ico_emer_03 {background-position:-270px -135px}
+#cont1 ul.emer li a:hover .ico_emer_04 {background-position:-405px -135px}
+#cont1 ul.emer li a:hover .ico_emer_05 {background-position:-540px -135px}
+#cont1 ul.emer li a:hover .ico_emer_06 {background-position:-675px -135px}
+#cont1 ul.emer li a:hover .ico_emer_07 {background-position:-810px -135px}
+#cont1 ul.emer li a:hover .ico_emer_08 {background-position:-945px -135px}
+
+#cont1 .emer_txt {display:inline-block;width:80%}
+
+/* 게시판 */
+#cont2 {width:700px;margin-top:30px}
+#cont2 ul.tab_board {position:relative;width:70%;margin-top:20px}
+#cont2 ul.tab_board > li {float:left}
+#cont2 ul.tab_board > li > a {display:block;padding:0 25px;height:67px;line-height:67px;text-align:center;border:1px solid #ccc;box-sizing:border-box;margin-right:-1px;color:#333;font-weight:500}
+#cont2 ul.tab_board > li a.active {border-bottom:5px solid #369}
+
+#cont2 .tab_list {position:absolute;top:67px;left:0;margin-top:-1px;border:1px solid #ccc;width:700px;height:300px;display:none}
+#cont2 .tab_list.active {display:block}
+
+#cont2 .tab_list .btn_more {position:absolute;top:-35px;right:0px;border:0;background:none}
+#cont2 .tab_list .btn_more a {display:block;width:50px;height:60px;line-height:60px;text-align:center;font-size:50px;color:#555}
+#cont2 .tab_list .btn_more a:hover, #cont2 .btn_more a:active, #cont2 .btn_more a:focus {text-decoration:none;color:#06a}
+
+#cont2 .tab_list ul {padding:10px 20px}
+#cont2 .tab_list ul > li {width:100%;border-bottom:1px solid #eee}
+#cont2 .tab_list ul > li > a {display:inline-block;width:80%;height:35px;line-height:35px;padding-left:20px;overflow:hidden;background:url(../images/ico_list.png) no-repeat 5px 50%;color:#555}
+#cont2 .tab_list ul > li span {float:right;margin-right:10px;line-height:35px}
+
+/* 팝업뉴스 */
+#cont3 {position:relative;width:500px;margin-top:30px}
+#cont3 #control_card {position:absolute;right:0px;top:27px}
+#cont3 #control_card li {float:left;width:40px;margin-left:5px;box-sizing:border-box}
+#cont3 #control_card li.btn_prev_card {border:1px solid #ccc;background:#fff url(../images/ico_prev.png) no-repeat center}
+#cont3 #control_card li.btn_next_card {border:1px solid #999;background:#fff url(../images/ico_next.png) no-repeat center}
+#cont3 #control_card li a {display:block;height:40px;text-indent:-9999px}
+#cont3 #control_card li.btn_prev_card:hover {border:2px solid #ccc}
+#cont3 #control_card li.btn_next_card:hover {border:2px solid #999}
+#cont3 #popnews {position:relative;margin-left:20px;width:480px;height:300px;overflow:hidden}
+#cont3 #popnews ul {position:absolute;width:1440px;left:-480px}
+#cont3 #popnews ul li {position:relative;float:left}
+#cont3 #popnews ul li a {display:block;width:480px;height:300px}
+#cont3 #popnews ul li a img {width:480px;height:auto}
+#cont3 #popnews ul li .card_tit {position:absolute;bottom:0;width:100%;height:50px;line-height:50px;text-align:center;background:rgba(0,0,0,0.5);color:#fff;font-weight:500}
+
+/* 민원서비스 */
+#cont4 {width:400px;margin-top:40px}
+#cont4 ul.minwon {width:100%;padding:1px 0 0 1px}
+#cont4 ul.minwon li {float:left;width:50%;height:110px;margin:-1px 0 0 -1px;padding-top:20px;box-sizing:border-box;border:1px solid #ccc;text-align:center}
+#cont4 ul.minwon li:hover {border:3px solid #06a}
+#cont4 ul.minwon li a {display:block}
+#cont4 ul.minwon li a .ico_minwon_set {display:block;width:50px;height:50px;margin:0 auto;background:url(../images/ico_minwon_set.png) no-repeat 0 0}
+#cont4 ul.minwon li a .ico_minwon_01 {background-position:0 0}
+#cont4 ul.minwon li a .ico_minwon_02 {background-position:-50px 0}
+#cont4 ul.minwon li a .ico_minwon_03 {background-position:-100px 0}
+#cont4 ul.minwon li a .ico_minwon_04 {background-position:-150px 0}
+#cont4 ul.minwon li a .ico_minwon_05 {background-position:-200px 0}
+#cont4 ul.minwon li a .ico_minwon_06 {background-position:-250px 0}
+#cont4 ul.minwon li a span.minwon_txt {color:#555;font-weight:500}
+
+/* 홍보미디어 */
+#cont5 {width:400px;margin-top:40px;position:relative}
+#cont5 #control_media {position:absolute;right:15px;top:27px}
+#cont5 #control_media li {float:left;width:40px;margin-left:5px;box-sizing:border-box}
+#cont5 #control_media li.btn_prev_media {border:1px solid #ccc;background:#fff url(../images/ico_prev.png) no-repeat center}
+#cont5 #control_media li.btn_next_media {border:1px solid #999;background:#fff url(../images/ico_next.png) no-repeat center}
+#cont5 #control_media li a {display:block;height:40px;text-indent:-9999px}
+#cont5 #control_media li.btn_prev_media:hover {border:2px solid #ccc}
+#cont5 #control_media li.btn_next_media:hover {border:2px solid #999}
+#cont5 #mediabox {margin-left:15px;position:relative;width:370px;height:240px;overflow:hidden}
+#cont5 #mediabox ul {width:1480px;position:absolute;left:-370px}
+#cont5 #mediabox ul li {position:relative;float:left;width:370px;height:240px}
+#cont5 #mediabox ul li a {display:block}
+#cont5 #mediabox ul li a img {width:370px;height:auto}
+
+/* 체험교육 */
+#cont6 {width:400px;margin-top:40px;background:#efefef}
+#cont6 ul li {margin:0 20px 20px;height:60px;line-height:60px;background:#fff}
+#cont6 ul li:hover {background:#06a}
+#cont6 ul li:nth-child(n+2) {background:#fff url(../images/ico_svg/ico_popup.svg) no-repeat 97% 50%}
+#cont6 ul li:nth-child(n+2):hover {background:#0066aa url(../images/ico_svg/ico_popup_ov.svg) no-repeat 97% 50%}
+#cont6 ul li a {display:block;padding-left:20px;color:#333}
+#cont6 ul li a:hover {color:#fff}

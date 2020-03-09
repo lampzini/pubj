@@ -1,0 +1,38 @@
+.the_slider{
+	display: block;
+	height: 500px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+.the_slider .s_slide{
+	display: block;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.the_slider .s_slider_container{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.the_slider .s_slider_container:active{
+    cursor: -webkit-grabbing
+}
+
+.s_slide {
+	background-position: 50% 50%; background-size:cover
+}
+
+.the_slider .s_slide_0{
+	background-image: url('../images/visual_01.jpg')
+}
+
+.the_slider .s_slide_1{
+	background-image: url('../images/visual_02.jpg')
+}

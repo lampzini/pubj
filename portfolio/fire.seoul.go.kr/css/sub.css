@@ -1,0 +1,216 @@
+/* sub_wrap layout */
+#sub_wrap {width:100%;background:#fff}
+#left_area {float:left;width:210px;margin-top:30px}
+#right_area {float:right;margin-top:30px;width:950px}
+
+/* 좌측메뉴 */
+#left_area h3 {width:210px;height:130px;line-height:130px;background:url(../images/bg_sub_title.png) no-repeat 0 0;text-align:center;color:#fff;font-size:28px;font-weight:400}
+#left_area .sub_menu > li {border-bottom:1px solid #ccc}
+#left_area .sub_menu > li > a {display:block;padding:10px 0 10px 10px;line-height:20px;color:#555;font-weight:500}
+#left_area .sub_menu > li > a:hover {background:#06a;color:#fff}
+#left_area .sub_menu > li > a.ico_submenu {background:#fff url(../images/ico_svg/ico_submenu.svg) no-repeat 95% 50%}
+#left_area .sub_menu > li > a.ico_submenu:hover {background:#06a url(../images/ico_svg/ico_submenu_ov.svg) no-repeat 95% 50%;color:#fff}
+#left_area .sub_menu > li > a.linkout_menu {background:#fff url(../images/ico_svg/ico_popup.svg) no-repeat 97% 50%;background-size:25px}
+#left_area .sub_menu > li > a.linkout_menu:hover {background:#06a url(../images/ico_svg/ico_popup_ov.svg) no-repeat 97% 50%;background-size:25px}
+#left_area .sub_menu > li > ul.sub_depth02 {display:none}
+#left_area .sub_menu > li > ul.sub_depth02 li {border-bottom:1px dashed #ccc;background:#eee}
+#left_area .sub_menu > li > ul.sub_depth02 li > a {display:block;padding:5px 0 5px 20px;line-height:20px;font-size:13px;color:#555;font-weight:500}
+#left_area .sub_menu > li > ul.sub_depth02 li > a.linkout_menu {background:#eee url(../images/ico_svg/ico_popup.svg) no-repeat 97% 50%;background-size:25px}
+#left_area .sub_menu > li > ul.sub_depth02 li > a:hover {background:#06a;color:#fff}
+#left_area .sub_menu > li > ul.sub_depth02 li > a.linkout_menu:hover {background:#06a url(../images/ico_svg/ico_popup_ov.svg) no-repeat 97% 50%;background-size:25px}
+#left_area .sub_menu > li > ul.sub_depth02 li:first-child {border-top:1px solid #ccc}
+#left_area .sub_menu > li > ul.sub_depth02 li:last-child {border:0}
+
+/* 페이지안내(jumbo+breadcrumb) */
+#right_area h2.jumbo {padding-left:10px;height:90px;line-height:100px;font-size:34px;font-weight:normal;color:#000}
+#right_area .breadcrumb {width:100%;box-sizing:border-box;border-bottom:2px solid #555;background:#fff} 
+#right_area .breadcrumb ul {float:right;padding-right:10px}
+#right_area .breadcrumb ul li {float:left;height:40px;line-height:40px;font-size:14px;color:#999;font-weight:500}
+#right_area .breadcrumb ul li:after {content:'>';padding:0 5px;color:#999}
+#right_area .breadcrumb ul li:last-child:after {content:'';padding:0}
+#right_area .breadcrumb ul li a.gohome {display:inline-block;width:30px;height:40px;margin-left:10px;background:url(../images/ico_svg/ico_home.svg) no-repeat 0 50%;background-size:30px;text-indent:-99999px}
+
+/* sub 공통 */
+.subpage h3 {font-size:24px;font-weight:500}
+.subpage h3:before {content:'_';font-size:40px;padding-right:10px}
+.subpage .remarkbox {margin:10px 0 30px;width:100%;padding:20px;border:3px solid #9ad;border-radius:10px;box-sizing:border-box;line-height:24px;font-size:17px;color:#444}
+
+.txt {margin:10px 0 30px 40px;line-height:30px;font-size:17px;color:#555}
+.txt_default {margin:10px 10px 30px;line-height:30px;font-size:17px;color:#555}
+
+/* txt 정렬 */
+.txt_left {text-align:;left}
+.txt_right {text-align:right}
+.txt_center {text-align:center}
+
+/* txt 크기설정 - 미리 사용하는 폰트 크기 설정할것을... */
+.txt_font_size36 {font-size:34px} /* h2 */
+.txt_font_size30 {font-size:30px}
+.txt_font_size24 {font-size:24px} /* h3 */
+.txt_font_size20 {font-size:20px} /* btn */
+.txt_font_size18 {font-size:18px} /* gnb dt */
+.txt_font_size17 {font-size:17px} /* remarkbox, dd */
+.txt_font_size16 {font-size:16px}
+.txt_font_size14 {font-size:14px} /* gnb-sub */
+.txt_font_bold {font-weight:500}
+
+/* tab_menu 기본설정 */
+.subpage {margin-top:40px}
+.subpage ul.tab_title li {float:left;height:55px;line-height:55px;margin-left:-1px;border:1px solid #efefef;background:#fafafa;box-sizing:border-box;text-align:center}
+.subpage ul.tab_title li a {display:block;height:55px;border-bottom:3px solid #06a;box-sizing:border-box;color:#06a;font-weight:500}
+.subpage ul.tab_title li a:hover, .subpage ul.tab_title li a:active, .subpage ul.tab_title li a:focus {border-bottom:3px solid #06a}
+.subpage ul.tab_title li a.active {border:3px solid #06a;border-bottom:3px solid #fff;background:#fff}
+.subpage .board_tab {display:none;margin-top:40px}
+.subpage .board_tab.current {display:block}
+
+/* tab_menu 개수설정 */
+.subpage ul.tabNum2 li {width:50%}
+.subpage ul.tabNum3 li {width:33.33%}
+.subpage ul.tabNum4 li {width:25%}
+
+/* subBtn 기본설정 */
+.subBtnArea {margin-bottom:30px}
+.subBtnArea li {float:left}
+.subBtn {display:block;padding:10px 0;border:1px solid #06a;box-sizing:border-box;border-radius:30px;text-align:center;font-size:20px;color:#06a}
+.subBtn:hover, .subDownBtn:active, subDownBtn:focus {background:#06a;color:#fff}
+/* subBtn 개수 */
+.subBtnNum1 li {width:100%}
+.subBtnNum2 li {width:48%;padding:0 1%}
+.subBtnNum3 li {width:31.33%;padding:0 1%}
+
+/* subBtn icon Download */
+.downicon {background:#f4f4f4 url(../images/ico_svg/ico_downBtn.svg) no-repeat 95% 50%;background-size:30px 38px}
+.downicon:hover, .downicon:active, .downicon:focus {background:#06a url(../images/ico_svg/ico_downBtn_ov.svg) no-repeat 95% 50%;background-size:30px 38px;color:#fff}
+/* subBtn icon linkout */
+.linkicon {background:#f4f4f4 url(../images/ico_svg/ico_popup.svg) no-repeat 97% 50%;background-size:30px 30px}
+.linkicon:hover, .linkicon:active, .linkicon:focus {background:#06a url(../images/ico_svg/ico_popup_ov.svg) no-repeat 97% 50%;background-size:30px 30px;color:#fff}
+/* subBtn icon none */
+.noicon, .noicon:hover, .noicon:active, .noicon:focus {background-image:none}
+
+/* imgbox 사진 가로배열 개수 */
+.charList2 li {float:left;width:50%;text-align:center}
+.charList3 li {float:left;width:33.33%;text-align:center}
+.charList4 li {float:left;width:25%;text-align:center}
+.imgbox {margin:20px 0;width:100%;height:auto;text-align:center;border:1px solid #9ad;border-radius:10px;box-sizing:border-box}
+.imgbox ul li div.charImg {margin-top:5px}
+.imgbox img {margin:20px 0;max-width:90%}
+.imgbox ul li p.charTxt {margin:5px auto 20px;padding:5px 0;width:70%;background:#06a;color:#fff}
+
+/* subpage list-style */
+.subTxt {margin:10px 0 30px}
+.subTxt dt {margin:30px 0 0 40px;padding-left:25px;background:url(../images/ico_svg/ico_sublistemblem.svg) no-repeat 0 6px;font-size:18px;color:#333}
+.subTxt dd {margin-left:70px;padding-left:20px;background:url(../images/ico_svg/ico_sublist.svg) no-repeat 0 12px;color:#555}
+
+/* board search area */
+.subpage .boardsearch {padding-top:10px;width:100%;height:50px;background:#efefef;border:1px solid #ccc;box-sizing:border-box}
+.subpage .boardselect {margin-left:10px;width:25%;height:30px;vertical-align:top;border:1px solid #ccc}
+.subpage .boardinput {margin-left:10px;width:65%;height:28px;vertical-align:top;border:1px solid #ccc}
+.subpage .boardbtn {width:5%;height:30px;margin-left:10px;vertical-align:top;}
+
+/* board(table) no style */
+.tb_none {width:100%;border:1px solid #ccc}
+/* board(table) default style setting */
+.tb_default {width:100%;margin:30px 0}
+.tb_default tr {text-align:center;font-size:13px}
+.tb_default thead tr th {border-top:1px solid #999}
+.tb_default tr th {background:#f4f4f4;padding-top:15px;padding-bottom:15px;line-height:24px;font-weight:500}
+.tb_default tbody tr th {border-bottom:1px solid #ccc;color:#06a;background:none}
+.tb_default tr td {border-bottom:1px solid #ccc;padding:15px 10px;color:#666}
+.tb_default tr:last-child td, .tb_default tr:last-child th {border-bottom:1px solid #ccc}
+/* board(table) 왼쪽정렬 셀위치설정 */
+.tb_nth2_left tr td:nth-child(2) {text-align:left;padding:10px 20px}
+.tb_nth3_left tr td:nth-child(3) {text-align:left;padding:10px 20px}
+.tb_nth4_left tr td:nth-child(4) {text-align:left;padding:10px 20px}
+/* board(table) 글씨굵기 셀위치설정 */
+.tb_nth1_bold tbody tr th:first-child {color:#06a;font-weight:500}
+/* board(table) 글씨크기 설정 */
+.tb_font_size14 tr {font-size:14px}
+.tb_font_size15 tr {font-size:15px}
+/* board(table) 줄단위 배경색상 설정 */
+.tb_bg2n tr:nth-of-type(2n) td {background:#fafafa}
+/* board(table) tbody th 배경색상 설정 */
+.tb_tbodyth_bg tbody tr th {background:#f4f4f4}
+/* board(table) tbody 상단라인 설정 */
+.tb_tbody_topline tbody tr:first-child th, .tb_tbody_topline tbody tr:first-child td {border-top:1px solid #999}
+/* board(table) rowspan 세로라인 설정 */
+.tb_vline tr th, .tb_vline tr td {border-right:1px solid #ccc}
+.tb_vline tr th:last-child, .tb_vline tr td:last-child {border-right:0}
+/* board(table) colspan 세로라인 설정 */
+.th_vline tr th, .th_vline tr td {border-left:1px solid #ccc}
+.th_vline tr th:first-child, .th_vline tr td:first-child {border-left:0}
+
+/* paginate */
+.paginate {margin:30px auto 0;text-align:center}
+.paginate ul > li {display:inline-block}
+.paginate ul > li.pagespace {vertical-align:top;padding:0 10px}
+.paginate ul > li > a {display:block;width:30px;height:30px;line-height:30px;text-align:center;border:1px solid #eee}
+.paginate ul > li > a.active {background:#06a;border:1px solid #06a;color:#fff}
+.paginate ul > li > a:hover, .paginate ul > li > a:active, .paginate ul > li > a:focus {border:1px solid #06a;background:#06a;color:#fff}
+.paginate ul > li > a.prev {background:url(../images/ico_svg/ico_prev.svg) no-repeat 50%;text-indent:-99999px}
+.paginate ul > li > a.next {background:url(../images/ico_svg/ico_next.svg) no-repeat 50%;text-indent:-99999px}
+
+/* board(table) icon 설정 */
+i.ico_desc {display:inline-block;width:16px;height:16px;background:url(../images/ico_svg/ico_disc.svg) no-repeat 50%}
+i.ico_notice {display:inline-block;width:30px;height:16px;background:url(../images/ico_svg/ico_notice.svg) no-repeat 50%}
+i.ico_downBtn {display:inline-block;width:30px;height:30px;background:url(../images/ico_svg/ico_downBtn.svg) no-repeat 50%}
+
+.red {color:#f00 !important}
+
+/* image gallery default */
+.gallery {width:100%;margin-top:30px}
+.gallery ul {font-size:0}
+.gallery ul li {float:left;width:306px;height:310px;margin-left:16px;margin-top:16px;padding:15px;border:1px solid #eee;border-top:1px solid #06a;box-sizing:border-box;font-size:14px;overflow:hidden}
+.gallery ul li:nth-of-type(3n+1) {margin-left:0}
+.gallery ul li a {width:100%}
+.gallery ul li p.list_date {margin-top:10px;color:#999}
+.gallery ul li p.list_subject {margin-top:5px;line-height:24px;font-size:18px;color:#444;font-weight:400}
+.gallery ul li a img {width:100%;height:200px;border:1px solid #eee;box-sizing:border-box}
+
+/* 본부소개 */
+.bg_greeting {position:relative;background:url(../images/greeting.png) no-repeat center; background-size:contain;width:100%;height:200px;border:5px solid #6be;border-radius:10px;box-sizing:border-box}
+.txt_greeting {position:absolute;top:30px;left:40px}
+.txt_greeting_head {font-size:30px;font-weight:500;color:#06a}
+.txt_greeting_body {font-size:18px;font-weight:400;color:#444}
+
+/* 로그인 */
+.loginbox {width:850px;margin:50px auto}
+.loginbox .login_left {float:left;width:60%;height:440px;padding:50px;text-align:center;box-sizing:border-box;border:1px solid #eee;border-right:0}
+.loginbox .login_left .log_txt .subtxt{text-align:center;font-size:14px;margin-bottom:20px}
+.loginbox .login_left .log_txt .btxt {text-align:center;font-size:34px;line-height:40px;font-weight:600}
+.loginbox .login_left .log_txt .btxt span {font-weight:100}
+.loginbox .login_left .input_box .login_input{margin:10px auto;width:80%;height:46px;padding:0 20px;border-radius:50px;border:2px solid #f5f5f5;font-weight:500;color:#333}
+.loginbox .login_left .input_box .login_input.ico_id {background:url(../images/ico_id.svg) no-repeat right 50%}
+.loginbox .login_left .input_box .login_input.ico_pw {background:url(../images/ico_pw.svg) no-repeat right 50%} /* ico_id, ico_pw svg파일 만들기 */
+.loginbox .login_left .input_box .login_input:focus {border:2px solid #06a;color:#06a}
+.loginbox .login_left .input_box .btn_login {margin:10px auto;width:90%;height:46px;padding:0 20px;background:#06a;border-radius:50px;border:2px solid #06a;font-weight:500;color:#fff}
+.loginbox .info_box {float:left;width:40%;height:440px;box-sizing:border-box;border:1px solid #eee;background:url(../images/bg_login.jpg) no-repeat center/cover}
+.loginbox .info_box ul {width:80%;margin:0 auto}
+.loginbox .info_box ul li:first-child {border-bottom:1px solid #fff}
+.loginbox .info_box ul li a {display:block;height:180px;margin:20px;text-align:center;color:#fff}
+.loginbox .info_box ul li a .btxt {font-size:17px;padding-top:120px}
+.loginbox .info_box ul li a .stxt {font-size:13px;font-weight:100}
+
+/* 찾아오시는 길 */
+.map {}
+
+/* 회원가입 step1 */
+.subpage .join_step {position:relative;margin-bottom:50px}
+.subpage .join_step:after {content:'';position:absolute;top:37px;left:20%;width:60%;height:1px;border-top:1px dashed #ddd}
+.subpage .join_step ol {position:relative;z-index:10}
+.subpage .join_step ol li {display:inline-block;width:33%;padding-top:80px;text-align:center;font-size:16px}
+.subpage .join_step li:nth-child(1) {background:url(../images/join_step01.png) no-repeat 50% 0}
+.subpage .join_step li:nth-child(2) {background:url(../images/join_step02.png) no-repeat 50% 0}
+.subpage .join_step li:nth-child(3) {background:url(../images/join_step03.png) no-repeat 50% 0}
+.subpage .join_step li.step_on:nth-child(1) {background:url(../images/join_step01_on.png) no-repeat 50% 0;color:#38d}
+.subpage .join_step li.step_on:nth-child(2) {background:url(../images/join_step02_on.png) no-repeat 50% 0;color:#38d}
+.subpage .join_step li.step_on:nth-child(3) {background:url(../images/join_step03_on.png) no-repeat 50% 0;color:#38d}
+.subpage .caution_box {margin-bottom:30px;padding:15px 50px;background:#eefafc url(../images/ico_caution.png) no-repeat 20px 17px;font-size:14px;font-weight:500;color:#333}
+.subpage .join_chk_wrap {margin-bottom:40px;border-top:2px solid #38d}
+.subpage .join_chk_wrap .all_chk {padding:0 20px;line-height:57px;background:#f5f5f5;border-bottom:1px solid #ddd;font-weight:500;color:#444}
+.subpage .join_chk_wrap .chk_area .chk_box {padding:0 20px;line-height:57px;border-bottom:1px solid #ddd}
+.subpage .join_chk_wrap .chk_area .chk_box .rule_show {float:right;margin-top:10px;padding:0 20px;border:1px solid #ddd;background:#f4f4f4;line-height:36px;color:#333}
+.subpage .join_chk_wrap .chk_area .rule_box {padding:10px 20px;border-bottom:1px solid #ddd}
+.subpage .join_chk_wrap .chk_area .rule_box >div {padding:15px 20px;height:300px;overflow-y:auto;border:1px solid #efefef;color:#555}
+.subpage .join_chk_wrap .chk_area .rule_box div > table {border-spacing:0;border-collapse:collapse}
+.subpage .join_chk_wrap .chk_btn {margin-top:20px}
+.subpage .join_chk_wrap .chk_btn button {width:100%;height:50px;font-weight:500;cursor:pointer}

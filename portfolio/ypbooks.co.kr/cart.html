@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>영풍문고 장바구니</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/cart.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+<!-- 서브해더 : start -->
+	<header id="subHeader">
+		<div id="subNavi">
+			<div class="back"><a href="javascript:history.back()">뒤로가기</a></div>
+			<p class="pTitle">장바구니</p>
+			<div class="home"><a href="index.html">홈으로</a></div>
+		</div>
+	</header>
+	<div id="shArea"></div>
+<!-- 서브해더 : end -->
+
+<!-- 본문 : start -->
+	<section id="cart">
+		<h2 class="blind">장바구니</h2>
+
+		<!-- 상품별 분류탭 : start -->
+		<div id="tab-box">
+			<ul class="tab">
+				<li data-tab="cartTab01" class="on">일반상품</li>
+				<li data-tab="cartTab02">중고상품</li>
+			</ul>
+		</div>
+		<!-- 상품별 분류탭 : end -->
+
+		<!-- 장바구니 : 일반상품 탭 : start -->
+		<div id="cartTab01" class="tabcontent on">
+			<h2 class="blind">일반상품목록</h2>
+
+			<form action="#" name="frm">
+				<fieldset>
+					<legend>장바구니양식</legend>
+
+					<div id="delivAllCheck">
+						<input type="checkbox" name="all" id="all" onclick="allCheck()" /><label for="ypdeliv">영풍문고 배송</label>
+					</div>
+
+					<div id="deliBook">
+						<div class="bookCheck">
+							<input type="checkbox" id="bookName" "" /><label for="bookName">호텔창문(2019제 13회 김유정 문학상 수상작품집)</label>
+						</div>
+
+						<div class="bookList clear">
+							<div class="bookImg"><img src="images/newbook_01.jpg" alt="호텔창문(2019제 13회 김유정 문학상 수상작품집)" /></div>
+							<div class="bookInfo">
+								<p class="bookOldPrice">32,000원</p>
+								<p class="bookCost">
+									<span class="bookPrice">28,000원</span> (<span class="salePer">할인10%</span> + 적립1,400원)
+								</p>
+								<p><label for="su2" class="blind">수량:</label><input type="number"  name="su2" id="su2" placeholder="1" /></p>
+
+								<p class="outBook">11월 11일 출고예정</p>
+								<div id="oneOrdBtn" class="clear">
+									<ul>
+										<li><a href="#">나우드림이동</a></li>
+										<li><a href="login.html">바로구매</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="amountBox">
+						<ul>
+							<li>
+								<label for="point">적립포인트</label>
+								<a href="#" class="ques">적립포인트안내</a>
+								<input type="text" name="point" id="point" disabled="disabled" placeholder="2,300원" />
+							</li>
+							<li>
+								<label for="prediction">결제예정금액</label>
+								<input type="text" name="prediction" id="prediction" disabled="disabled" placeholder="28,000원" />
+							</li>
+							<li>
+								<label for="delivery">배송비</label>
+								<input type="text" name="delivery" id="delivery" disabled="disabled" placeholder="0원" />
+								<span class="free">(10,000원 이상 주문하시면 배송비가 무료입니다.)</span>
+							</li>
+							<li>
+								<span class="prdPriceTxt">상품금액(1개)</span>
+								<input type="text" disabled="disabled" placeholder="28,800원" />
+							</li>
+						</ul>
+					</div>
+
+					<div class="dayDeliv">
+						<span>배송일정</span>
+						<a href="#" class="ques">배송일정안내</a>
+						<p>회원 로그인 후 장바구니에 상품을 담으시면 30일간 자동 보관 됩니다.</p>
+						<p>해외원서 주문 후 단순변심에 의한 취소 시 도서판매가의 20% 수수료가 부과됩니다.</p>
+					</div>
+
+					<div id="orderBtn" class="clear">
+						<ul>
+							<li><a href="login.html">선물하기</a></li>
+							<li><a href="login.html">선택주문</a></li>
+						</ul>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<!-- 장바구니 : 일반상품탭 : end -->
+		
+		<!-- 장바구니 : 중고상품 탭 : start -->
+		<div id="cartTab02" class="tabcontent">
+			<h2 class="blind">중고상품목록</h2>
+			<div class="oldPrdTxt">중고상품이 없습니다.</div>
+		</div>
+		<!-- 장바구니 : 중고상품탭 : end -->
+
+	</section>
+<!-- 본문 : end -->
+
+<script>
+	// 일반상품-중고상품 탭 스크립트
+	$(function(){
+		$('ul.tab li').click(function(){
+			var acTab = $(this).attr('data-tab');
+
+			$('ul.tab li').removeClass('on');
+			$('.tabcontent').removeClass('on');
+
+			$(this).addClass('on');
+			$('#'+acTab).addClass('on');
+		})
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<?php include 'header.php'; ?>
+
+	<div id="sub_wrap">
+		<div class="inner clearfix">
+
+			<nav id="left_area">
+				<h3>이용안내</h3>
+				<ul class="sub_menu">
+					<li><a href="sitemap.html">사이트맵</a></li>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="sub08-01.html">개인정보처리방침</a></li>
+					<li><a href="sub08-02.html">119구급차 영상정보처리기기 관리ㆍ운영지침</a></li>
+					<li><a href="sub08-03.html">119행정정보시스템 개인정보 위탁처리 안내</a></li>
+					<li><a href="sub08-04.html">이메일무단수집거부</a></li>
+				</ul>
+			</nav>
+			<!-- // 좌측메뉴 -->
+
+			<section id="right_area">
+
+				<div class="breadcrumb clearfix">
+					<h2 class="jumbo">회원가입</h2>
+					<ul>
+						<li><a href="index.html" class="gohome">홈으로</a></li>
+						<li>이용안내</li>
+						<li>회원가입</li>
+					</ul>
+				</div>
+				<!-- // jumbotron + breadcrumb -->
+
+				<div class="subpage">
+					<div class="join_step">
+						<ol>
+							<li>약관동의</li>
+							<li class="step_on">본인인증</li>
+							<li>회원가입</li>
+						</ol>
+					</div>
+
+					<div class="caution_box">
+						<p>회원 가입을 원하실 경우 아래 '이용약관, 개인정보 수집동의’ 에 대한 안내를 반드시 읽고, ‘동의’ 버튼을 선택해 주세요.</p>
+					</div>
+
+					<div class="join_chk_wrap">
+
+
+
+					</div>
+					<!-- // 인증확인 양식 -->
+
+				</div>
+				<!-- // 서브컨텐츠 -->
+			</section>
+		</div>
+	</div>
+
+<script>
+
+	// 약관동의 체크확인
+	function chk(){
+		var frm = document.frm;
+		if(!frm.agree_term.checked){
+			alert("이용약관에 동의하셔야 가입을 진행하실 수 있습니다.");
+			frm.agree_term.focus();
+			return;
+		}
+	
+		if(!frm.agree_privacy.checked){
+			alert("개인정보 처리방침에 동의하셔야 가입을 진행하실 수 있습니다.");
+			frm.agree_privacy.focus();
+			return;		
+		}
+
+		location.href="join02.html";
+	}
+
+	// 약관동의 전체체크
+	function checkAll(){
+		var frm = document.frm;
+		if(frm.check_all.checked){
+			for(var i=0;i<frm.length;i++){
+				if(frm[i].type == "checkbox")
+				frm[i].checked = true;			
+			}
+		}else{
+			for(var i=0;i<frm.length;i++){
+				if(frm[i].type == "checkbox")
+				frm[i].checked = false;
+			}
+		}
+	}
+
+	// 약관내용 open/close
+	$(function(){
+		$(".chk_box > .rule_show").on('click',function(){
+			$(this).hasClass('closed') ? $(this).text('내용닫기 ▲') : $(this).text('내용보기 ▼');
+			$(this).toggleClass('closed').parent().next('.rule_box').slideToggle();
+		});
+	});
+
+	</script>
+
+<?php include 'footer.php'; ?>

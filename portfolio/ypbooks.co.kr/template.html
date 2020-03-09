@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+	<title>template</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
+
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/layout.js?ver=1"></script>
+
+</head>
+<body id="mMain">
+
+<!-- Header 영역 : start -->
+		<div class="skip_navi">
+			<a href="#mContents">본문바로가기</a>
+		</div>
+
+	<!-- 하단 네비게이션 바 : start -->
+		<div id="naviBar">
+			<ul class="list">
+				<li class="openSide">카테고리</li>
+				<li class="schBtn">검색</li>
+				<li><a href="#">홈으로</a></li>
+				<li><a href="login.html">마이페이지</a></li>
+				<li><a href="#mMain">맨위로</a></li>
+			</ul>
+		</div>
+	<!-- 하단 네비게이션 바 : end -->
+
+	<!-- side Menu 영역 : start -->
+		<div class="bkCover" onclick="history.back();"></div>
+
+		<div id="sideMenuWrap" class="clear">
+		
+			<div id="sideBox"> <!-- 스크롤바 숨김박스 -->
+				<div class="closeSide" onclick="history.back();">전체메뉴닫기</div>
+				<div id="sideNavi">
+					<div class="sideMember">
+						<ul>
+							<li class="login"><a href="login.html">로그인</a></li>
+							<li class="join"><a href="join.html">회원가입</a></li>
+						</ul>
+					</div>
+
+					<h2 class="blind">Shortcuts</h2>
+					<ul class="sideMyMenu clear">
+						<li><a href="cart.html"></a><span class="sideTxt">장바구니</span></li>
+						<li><a href="#"></a><span class="sideTxt">주문배송</span></li>
+						<li><a href="m_store.html"></a><span class="sideTxt">매장검색</span></li>
+						<li><a href="nowdream.html"></a><span class="sideTxt">나우드림</span></li>
+					</ul>
+
+					<h2 class="classifyTit subTit">카테고리</h2>
+					<ul class="bookClassify clear">
+						<li><a href="list.html">국내소설</a></li>
+						<li><a href="list.html">외국소설</a></li>
+						<li><a href="list.html">비소설</a></li>
+						<li><a href="list.html">시</a></li>
+						<li><a href="list.html">경제/경영</a></li>
+						<li><a href="list.html">인문/과학</a></li>
+						<li><a href="list.html">어린이</a></li>
+						<li><a href="list.html">외국어</a></li>
+						<li><a href="list.html">컴퓨터</a></li>
+						<li><a href="list.html">여성/취미</a></li>
+						<li><a href="list.html">예술</a></li>
+						<li><a href="list.html">자연</a></li>
+						<li><a href="list.html">정치/법률</a></li>
+						<li><a href="list.html">자기계발</a></li>
+						<li><a href="list.html">교양/사상</a></li>
+						<li><a href="list.html">유아</a></li>
+						<li><a href="list.html">가정/생활</a></li>
+						<li><a href="list.html">건강</a></li>
+						<li><a href="list.html">취미/레져</a></li>
+						<li><a href="list.html">여행</a></li>
+						<li><a href="list.html">요리</a></li>
+						<li><a href="list.html">학습서</a></li>
+						<li><a href="list.html">청소년</a></li>
+						<li><a href="list.html">만화</a></li>
+						<li><a href="list.html">수험서</a></li>
+					</ul>
+
+					<h2 class="sellerTit subTit">영풍문고 전문관</h2>
+					<ul class="bookSeller">
+						<li><a href="newbook.html">새로나온 책 <span class="subGo">바로가기</span></li>
+						<li><a href="books.html#best">베스트셀러 <span class="subGo">바로가기</span></a></li>
+						<li><a href="books.html#steady">스테디셀러 <span class="subGo">바로가기</span></a></li>
+						<li><a href="books.html#theme">테마가 있는 책 <span class="subGo">바로가기</span></a></li>
+						<li><a href="event.html">이벤트 <span class="subGo">바로가기</span></a></li>
+					</ul>
+					<h2 class="famTit subTit">영풍문고 북스 패밀리</h2>
+					<ul class="bookFam clear">
+						<li><a href="#">리딩락</a></li>
+						<li><a href="#">저스툰</a></li>
+						<li><a href="#">기프티콘</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!-- side Menu 영역 : end -->
+
+		<header id="mHeader">
+			<nav class="nav clear">
+				<h1 class="logo"><a href="index.html">영풍문고</a></h1>
+
+				<div class="allMenuIco openSide">메뉴전체보기</div>
+				<div class="myPage"><a href="login.html">마이페이지</a></div>
+
+				<div class="searchBox">
+					<h2 class="blind">검색창</h2>
+					<form action="#" name="srchBox" method="get">
+						<fieldset>
+							<legend>검색창</legend>
+							<label for="srch" class="blind">검색어</label>
+							<input type="search" class="search" id="srch"/>
+						</fieldset>
+					</form>
+				</div>
+
+				<div id="mGnb" class="clear">
+					<h2 class="blind">GNB</h2>
+					<ul>
+						<li class="on"><a href="#">홈</a></li>
+						<li><a href="nowdream.html">나우드림서비스</a></li>
+						<li><a href="books.html">추천도서</a></li>
+						<li><a href="newbook.html">신간도서</a></li>
+						<li><a href="event.html">이벤트</a></li>
+					</ul>
+				</div> <!-- 메인 GNB 영역 -->
+
+			</nav>
+
+		</header>
+		<div id="hArea"></div> <!-- 상단구분영역 : 삭제하지마세요 -->
+<!-- Header 영역 : end -->
+
+<!-- 본문 영역 : start // 이곳에 본문 내용 작성하세요 -->
+		<section id="section명"></section>
+<!-- // 본문 영역 : end -->
+
+<!-- 푸터 영역 : start -->
+		<footer id="footer">
+			<h2 class="blind">footer</h2>
+			<ul class="footMenu clear">
+				<li><a href="#">주문조회</a></li>
+				<li><a href="#">PC버전</a></li>
+				<li><a href="#">고객센터</a></li>
+			</ul>
+			<div class="footCom">(주)영풍문고</div>
+			<div class="footCont">
+				<p class="footTxt">대표이사 : 최영일 | 사업자등록번호 : 102-81-30788 <br />주소 : 서울특별시 강남구 강남대로 542번지 (우)06110 <br />통신판매업 신고번호 : 강남-05859</p>
+				<p class="footConfirm"><a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1028130788">사업자정보확인</a> | <a href="#">에스크로서비스 가입확인</a></p>
+				<p class="copyright">Copyright &copy; Youngpoong Bookrstore co., LTD</p>
+			</div>
+		</footer>
+<!-- 푸터 영역 : end -->
+
+<script>
+	// 슬라이더 베너 조절
+	$(document).ready(function() {
+		$('.bxslider').bxSlider({
+			mode: 'horizontal',
+			moveSlides: 1,				// 이동하는 슬라이드 개수
+			slideMargin: 0,				// 슬라이드간 여백설정
+			infiniteLoop: true,			// 무한회전처리 여부
+			slideWidth: 0,					// 슬라이드 이미지의 가로폭, 0 인경우 100%로 인식합니다.
+			minSlides: 3,
+			maxSlides: 1,					// 보여지는 슬라이드 개수
+			speed: 100,					// 넘어가는속도(1000 = 1초)
+			pause: 1000,					// 멈춤시간
+			auto:true,						// 자동슬라이드
+			controls:false,				// 넘김버튼 보여주기
+			pager:true,						// 페이지개수보여주기
+			responsive:true				// 반응형처리
+		});
+	});
+</script>
+
+
+
+</body>
+</html>

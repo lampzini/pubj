@@ -1,0 +1,98 @@
+<?php include 'header.php'; ?>
+
+	<div id="sub_wrap">
+		<div class="inner clearfix">
+
+			<nav id="left_area">
+				<h3>이용안내</h3>
+				<ul class="sub_menu">
+					<li><a href="sitemap.html">사이트맵</a></li>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="sub08-01.html">개인정보처리방침</a></li>
+					<li><a href="sub08-02.html">119구급차 영상정보처리기기 관리ㆍ운영지침</a></li>
+					<li><a href="sub08-03.html">119행정정보시스템 개인정보 위탁처리 안내</a></li>
+					<li><a href="sub08-04.html">이메일무단수집거부</a></li>
+				</ul>
+			</nav>
+			<!-- // 좌측메뉴 -->
+
+			<section id="right_area">
+
+				<div class="breadcrumb clearfix">
+					<h2 class="jumbo">로그인</h2>
+					<ul>
+						<li><a href="index.html" class="gohome">홈으로</a></li>
+						<li>이용안내</li>
+						<li>로그인</li>
+					</ul>
+				</div>
+				<!-- // jumbotron + breadcrumb -->
+
+				<div class="subpage">
+					<div class="loginbox">
+
+						<form action="index.html" name="frm" onsubmit="return idcheck()" method="post">
+							<fieldset>
+								<legend>login form</legend>
+								<div class="login_left">
+									<div class="log_txt">
+										<p class="subtxt">서울소방재난본부에 오신것을 환영합니다.</p>
+										<p class="btxt"><span>서울소방재난본부</span><br/>회원 로그인</p>
+									</div>
+									<div class="input_box">
+										<label for="idx" class="blind">아이디 입력</label><input type="text" id="idx" name="idx" placeholder="아이디를 입력하세요" class="login_input ico_id">
+										<label for="pw" class="blind">비밀번호 입력</label><input type="password" id="pw" name="pw" placeholder="비밀번호를 입력하세요" class="login_input ico_pw">
+										<input type="submit" name="submit" value="로그인" class="btn_login"> <br>
+										<input type="checkbox" id="id_save" name="id_save"><label for="id_save">아이디 저장</label>
+										
+									</div>
+								</div>
+
+								<div class="info_box">
+									<ul>
+										<li><a href="#" class="icon01">
+											<p class="btxt">아이디 / 비밀번호 찾기</p>
+											<p class="stxt">아이디 및 비밀번호 분실 시 이용</p>
+											</a>
+										</li>
+										<li><a href="join.html" class="icon02">
+											<p class="btxt">회원가입 바로가기</p>
+											<p class="stxt">서울소방재난본부 회원가입</p>
+											</a>
+										</li>
+									</ul>						
+								</div>
+								<!-- // 찾기 및 가입 -->
+						
+							</fieldset>
+						</form>
+						<!-- // 로그인 폼 -->
+
+					</div>
+				</div>
+				<!-- // 서브컨텐츠 -->
+			</section>
+		</div>
+	</div>
+
+	<script>
+	/* 스크립트 */
+		function idcheck(){
+			var frm = document.frm;
+
+			if(frm.idx.value == ""){								// 폼의 id 요소 값이 공백인 경우
+				alert('아이디입력');
+				frm.idx.focus();
+				return false;
+			}
+			if(frm.pw.value == ""){								// 폼의 pw 요소 값이 공백인 경우
+				alert('비밀번호 입력');
+				frm.pw.focus();
+				return false;
+			}
+			frm.submit();										// 서버전송 action 실행
+		}
+	</script>
+
+<?php include 'footer.php'; ?>

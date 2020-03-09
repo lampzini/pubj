@@ -1,0 +1,31 @@
+/* visual */
+
+
+/* contents */
+	#cate_bnr {width:100%;height:570px;background:url(../images/menu_cof_tit_bg.jpg) repeat-x 0 50%}
+
+	#cate_bnr .inner {position:relative}
+	#cate_bnr .inner h2 {padding-top:200px;font-size:40px;font-weight:100;text-align:center; margin-bottom:70px;color:#fff}
+	#cate_bnr .inner h2 span {font-weight:900;}
+	#cate_bnr .inner h3 {text-align:center;line-height:30px;font-size:20px;font-weight:100;color:#fff}
+	#cate_bnr .inner .prd_menu {position:absolute;margin-top:120px;left:50%;margin-left:-450px;text-align:center}
+	#cate_bnr .inner .prd_menu ul {margin:0 auto}
+	#cate_bnr .inner .prd_menu ul li {float:left;width:185px;height:36px;line-height:36px;border:1px solid #fff;margin-left:-1px;text-align:center}
+	#cate_bnr .inner .prd_menu ul li.on {background:#dd0330}
+	#cate_bnr .inner .prd_menu ul li:hover {background:#dd0330;}
+	#cate_bnr .inner .prd_menu ul li a {display:block;width:100%;color:#fff;font-size:14px}
+	#prd_content {margin:0 auto;width:1200px;padding-top:50px}
+	section {display: none;padding: 20px 0 0;border-top: 1px solid #ddd;}
+
+	#prd_list section ul li {float:left;width:25%;text-align:center;margin-bottom:50px}
+	#prd_list section ul li img {width:90%}
+	#prd_list section:after {content:'';display:block;clear:both}
+	#prd_list section .prd_name {color:#666;font-size:16px;font-weight:bold;padding-top:10px}
+	/* 라디오 버튼 숨김 */
+	#prd_list input {display:none}
+	#prd_list label {display:inline-block;margin:0 0 -1px;padding:10px 40px;font-weight:600;text-align:center;color:#bbb;border:1px solid transparent}
+	#prd_list label:hover {color:#dd0330;cursor:pointer}
+
+	/* input 클릭시, label 스타일 */
+	#prd_list input:checked + label {color:#dd0330;border:1px solid #ddd;border-top:2px solid #ddd;border-bottom:1px solid #fff} /* 인접선택자 */
+	#tab1:checked ~ #menu_01, #tab2:checked ~ #menu_02, #tab3:checked ~ #menu_03, #tab4:checked ~ #menu_04, #tab5:checked ~ #menu_05 {display:block}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>영풍문고 로그인</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/sub_header.css" />
+	<link rel="stylesheet" href="css/login.css" />
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+</head>
+
+<body>
+<!-- 서브해더 : start -->
+	<header id="subHeader">
+		<div id="subNavi">
+			<div class="back"><a href="javascript:history.back()">뒤로가기</a></div>
+			<p class="pTitle">로그인</p>
+			<div class="home"><a href="index.html">홈으로</a></div>
+		</div>
+	</header>
+	<div id="shArea"></div>
+<!-- 서브해더 : end -->
+
+<!-- 본문 : start -->
+	<div id="loginPage">
+		<h1 class="logo"><a href="index.html">영풍문고</a></h1>
+		<h2 class="blind">로그인</h2>
+		<form action="index.html" name="frm" onsubmit="return idpwCheck()" method="post">
+			<fieldset>
+				<legend>로그인폼</legend>
+				<p class="inputText">
+					<label for="id" class="blind">아이디</label>
+					<input type="text" name="id" id="id" title="아이디" placeholder="아이디"/>
+				</p>
+				<p class="inputText">
+					<label for="pw" class="blind">비밀번호</label>
+					<input type="password" name="pw" id="pw" title="비밀번호" placeholder="비밀번호" />
+				</p>
+				<div class="inputBtn">
+					<input type="submit" value="로그인" />
+				</div>
+
+				<div class="joinSearch">
+					<a href="#">아이디/비밀번호찾기</a>
+					<a href="join.html">회원가입</a>
+				</div>
+
+			</fieldset>
+		</form>
+	</div>
+<!-- 본문 : end -->
+
+	<script src="js/common.js"></script>
+
+</body>
+</html>

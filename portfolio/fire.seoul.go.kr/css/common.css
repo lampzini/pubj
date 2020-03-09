@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block}
+
+ol, ul, li {list-style:none}
+img,fieldset,iframe {border:0}
+img {vertical-align:top}
+input {vertical-align:middle}
+hr, legend {display:none}
+caption,legend {position:absolute;top:0;left:0;width:0;height:0;overflow:hidden;padding:0;visibility:hidden;font-size:0;line-height:0}
+em,address{font-style:normal}
+a{text-decoration:none}
+a:hover,a:active,a:focus{text-decoration:underline}
+
+#skip a, .skip a {font-size:0;width:0;position:absolute;left:-9999px}
+#skip a:focus, .skip a:focus {font-size:14px;padding:5px;width:100%;position:absolute;left:0px;text-align:center;background:#fff}
+
+/* hidden */
+.blind{display:block;position:absolute;font-size:0;width:0;height:0;line-height:0;left:0;top:-9999px;left:-9999px}
+
+/* base */
+.clearfix {content:'';display:block;clear:both}
+.clearfix:after{content:'';display:block;clear:both}

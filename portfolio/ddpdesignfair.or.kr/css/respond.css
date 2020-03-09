@@ -1,0 +1,144 @@
+/* desktop */
+@media screen and (min-width:769px) {
+	#header .inner .mobile_btn {display:none}
+	#m_gnb {display:none}
+}
+
+/* tablet */
+@media screen and (min-width:481px) and (max-width:768px) {
+
+	#header .inner .mobile_btn {display:none}
+	#m_gnb {display:none}
+	#header {background:#fff}
+	#header .logo {float:none;text-align:center;margin:0 auto;padding:15px}
+	#header .inner #gnb {float:none;width:100%}
+	#header .inner #gnb .main {height:50px;top:0;width:25%;margin:0;padding:0;background:#f7f9f8}
+	#header .inner #gnb .main > a {line-height:50px}
+	#header .inner #gnb .sub {top:50px;width:100%}
+
+	#visual .banner {width:100%}
+
+	#content1 .inner {width:98%;margin:0 auto}
+	#content1 .bnrBtn {width:49%;border:1px solid #ea6069;box-sizing:border-box;margin-right:0;margin-bottom:2%;height:200px;text-align:center;float:left}
+	#content1 .bnrBtn .quickTit {position:absolute;top:56%;width:100%;font-size:20px;font-weight:bold}
+	#content1 .bnrBtn .quickTxt {position:absolute;top:68%;left:50%;width:90%;margin-left:-45%;font-size:14px;margin-top:10px}
+	#content1 .bnrBtn a {display:block;height:100%;position:relative}
+
+	#content1 .bnrBtn1 {background:#ea6069 url(../images/q_ico_01.png) no-repeat 50% 20%;margin-right:2%}
+	#content1 .bnrBtn1 a {color:#fff}
+	#content1 .bnrBtn2 {background:#fff url(../images/q_ico_02_off.png) no-repeat 50% 20%;margin-right:0}
+	#content1 .bnrBtn2 a {color:#ea6069}
+	#content1 .bnrBtn3 {background:#fff url(../images/q_ico_03_off.png) no-repeat 50% 20%;margin-right:2%}
+	#content1 .bnrBtn3 a {color:#ea6069}
+	#content1 .bnrBtn4 {background:#ea6069 url(../images/q_ico_04.png) no-repeat 50% 20%;margin-right:0}
+	#content1 .bnrBtn4 a {color:#fff}
+
+	#content2 .more {position:absolute;top:15px;right:20px;font-size:40px}
+	#content2 .inner {width:98%;padding:0 1%;margin:0 auto}
+	#content2 .cont2 {float:left;position:relative;width:45%;padding:30px 1.5% 10px;background:#fff;margin:0 1%}
+	#content2 .cont2 .collaboTit {height:40px;border-bottom:2px solid #000;overflow:hidden}
+	#content2 .cont2 .collaboPic img {height:auto}
+	#content2 .cont2 .collaboName {font-size:18px;font-weight:bold;margin-top:15px}
+	#content2 .cont2 .collaboTxt {font-size:14px;color:#999;padding-top:15px}
+	#content2 .cont2 .more {color:#000}
+	#content2 .cont2 img {width:100%;margin-top:20px}
+	#content2 .cont3 {float:right;position:relative;width:45%;padding:30px 1.5% 10px;background:#fff;margin:0 1%}
+	#content2 .cont3 .trendTit {height:40px;border-bottom:2px solid #ea6069}
+	#content2 .cont3 .more {color:#ea6069}
+/* 	#content2 .cont3 .trendNameEng {display:block;overflow:hidden;width:100%;height:16px;line-height:16px;font-size:13px;color:#ea6069} */
+
+	#content2 .cont3 .trendLeft {float:none;width:100%}
+	#content2 .cont3 .trendLeft li {border-bottom:1px solid #eee}
+	#content2 .cont3 .trendLeft .trendPic {display:none}
+	#content2 .cont3 .trendLeft .trendName {font-size:18px;font-weight:bold;margin-top:15px;overflow:hidden}
+	#content2 .cont3 .trendLeft .trendTxt1 {font-size:14px;line-height:1.5em;color:#999;height:42px;margin:10px 0;overflow:hidden}
+
+	#content2 .cont3 .trendRight {float:none;width:100%;padding-left:0}
+	#content2 .cont3 .trendRight li {border-bottom:1px solid #eee}
+	#content2 .cont3 .trendRight li:last-child {display:none}
+	#content2 .cont3 .trendRight .trendName {font-size:18px;font-weight:bold;margin-top:15px;overflow:hidden}
+	#content2 .cont3 .trendRight .trendTxt2 {font-size:14px;line-height:1.5em;color:#999;height:42px;margin:10px 0;overflow:hidden}
+
+	#content2 .cont5 {padding:30px 0;margin:0 1%}
+	#content2 .cont5 .instaTit {width:100%;margin:0 auto;text-align:center;font-size:18px}
+	#content2 .cont5 .instaSub {width:100%;margin:0 auto;text-align:center}
+	#content2 .cont5 .instaPic li {float:left;width:24.5%}
+	#content2 .cont5 .instaPic li:nth-child(n+5) {display:none}
+
+	#footer .inner {width:98%;margin:0 auto;padding:30px 1%}
+}
+
+/* moblie */
+@media screen and (max-width:480px) {
+
+	#header .inner #gnb {display:none}
+	.inner {width:100%;margin:0 auto}
+
+	#header {height:80px}
+	#header .inner {width:100%;margin:0 auto;position:relative;z-index:99999}
+	#header .logo {position:absolute;top:0;left:0}
+	#header .logo a {width:100%}
+	#header .logo a img {width:70%;height:auto}
+	#header .inner .mobile_btn {position:absolute;top:20px;right:20px;display:block}
+
+	#m_gnb {position:absolute;width:100%;top:80px;left:0;background:#fff}
+	#m_gnb > ul {width:100%}
+	#m_gnb .m_main {float:none;width:100%;text-align:center;margin-top:0}
+	#m_gnb .m_main > a {display:block;height:40px;line-height:40px;font-size:18px;color:#555;font-weight:bold;border-bottom:1px solid #f7f9f8}
+	#m_gnb .m_main > a:hover {color:#fff;background:#ea6069}
+	#m_gnb .m_main .m_sub {font-size:20px;width:100%;z-index:200;background:#f7f9f8}
+	#m_gnb .m_main .m_sub {display:none}
+	#m_gnb .m_main .m_sub li {height:30px;line-height:30px;border-bottom:1px solid #efefef;padding:5px}
+	#m_gnb .m_main .m_sub li a {display:block;text-align:center;font-size:16px;color:#666;height:100%}
+	#m_gnb .m_main .m_sub li a:hover {background:#ea6069;color:#fff}
+
+	#content1 .inner {width:96%;padding:0 2%}
+	#content1 .bnrBtn {width:100%;height:120px;border:1px solid #ea6069;margin-bottom:10px;float:none}
+	#content1 .bnrBtn a {display:block;height:100%;position:relative}
+	#content1 .bnrBtn .quickTit {position:absolute;top:20%;left:30%;width:65%;font-size:20px;font-weight:bold;text-align:left}
+	#content1 .bnrBtn .quickTxt {position:absolute;top:50%;left:30%;width:65%;font-size:14px;text-align:left;margin:0}
+	
+	#content1 .bnrBtn1 {background:#ea6069 url(../images/q_ico_01.png) no-repeat 5% 50%}
+	#content1 .bnrBtn1 a {color:#fff}
+	#content1 .bnrBtn2 {background:#fff url(../images/q_ico_02_off.png) no-repeat 5% 50%}
+	#content1 .bnrBtn2 a {color:#ea6069}
+	#content1 .bnrBtn3 {background:#ea6069 url(../images/q_ico_03.png) no-repeat 5% 50%}
+	#content1 .bnrBtn3 a {color:#fff}
+	#content1 .bnrBtn4 {background:#fff url(../images/q_ico_04_off.png) no-repeat 5% 50%}
+	#content1 .bnrBtn4 a {color:#ea6069}
+
+	#content2 .more {position:absolute;top:15px;right:2%;font-size:40px}
+	#content2 .inner {width:96%;padding:0 2%;margin:0 auto}
+	#content2 .cont2 {float:none;position:relative;width:96%;height:auto;padding:30px 2%;background:#fff;margin:0}
+	#content2 .cont2 .collaboTit {height:40px;border-bottom:2px solid #000;overflow:hidden}
+	#content2 .cont2 .collaboPic img {height:auto}
+	#content2 .cont2 .collaboName {font-size:18px;font-weight:bold;padding-top:15px}
+	#content2 .cont2 .collaboTxt {font-size:14px;color:#999;padding-top:15px}
+	#content2 .cont2 .more {color:#000}
+	#content2 .cont2 img {width:100%;margin-top:20px}
+
+	#content2 .cont3 {float:none;position:relative;width:96%;padding:30px 2%;background:#fff;margin-top:30px}
+	#content2 .cont3 .trendTit {height:40px;border-bottom:2px solid #ea6069;color:#ea6069}
+	#content2 .cont3 .more {color:#ea6069}
+
+	#content2 .cont3 .trendLeft {float:none;width:100%;padding:0}
+	#content2 .cont3 .trendLeft li {border-bottom:1px solid #eee}
+	#content2 .cont3 .trendLeft .trendPic {display:none}
+	#content2 .cont3 .trendLeft .trendName {font-size:18px;height:30px;line-height:30px;font-weight:bold;margin:15px 0;overflow:hidden}
+	#content2 .cont3 .trendLeft .trendTxt1 {font-size:14px;line-height:1.5em;color:#999;height:42px;margin:10px 0;overflow:hidden}
+
+	#content2 .cont3 .trendRight {float:none;width:100%;padding:0}
+	#content2 .cont3 .trendRight li {border-bottom:1px solid #eee}
+	#content2 .cont3 .trendRight li:last-child {display:none}
+	#content2 .cont3 .trendRight .trendName {font-size:18px;height:30px;line-height:30px;font-weight:bold;margin-top:20px;overflow:hidden}
+	#content2 .cont3 .trendRight .trendTxt2 {font-size:14px;line-height:1.5em;color:#999;height:42px;margin:10px 0;overflow:hidden}
+/* 	#content2 .cont3 .trendNameEng {display:block;overflow:hidden;width:100%;height:16px;font-size:13px;color:#ea6069} */
+
+	#content2 .cont5 {padding:30px 0;margin:0 1%}
+	#content2 .cont5 .instaTit {width:100%;margin:0 auto;text-align:center;font-size:18px}
+	#content2 .cont5 .instaSub {width:100%;margin:0 auto;text-align:center}
+	#content2 .cont5 .instaPic li {float:left;width:49%}
+	#content2 .cont5 .instaPic li:nth-child(n+3) {display:none}
+
+	#footer .inner {width:96%;margin:0 auto;padding:30px 2%;position:relative}
+}

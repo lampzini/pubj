@@ -1,0 +1,56 @@
+/* 장바구니 페이지 */
+.tabcontent.on {display: block}
+.tabcontent {display:none}
+#tab-box .tab li {float:left;width:50%;height:40px;line-height:40px;text-align:center;background:#efefef}
+#tab-box .tab li.on {background:#fff}
+#tab-box .tab li a {display:block;width:100%;height:100%}
+
+.oldPrdTxt {width:100%;height:100px;line-height:100px;text-align:center;font-size:16px;font-weight:bold}  /* 중고상품 내용 작성 후 삭제할 것 */
+
+
+#delivAllCheck {font-size:16px;color:#7199ca;font-weight:bold;height:40px;line-height:40px;vertical-align:bottom}
+input[type="checkbox"] {width:18px;height:18px;border:1px solid #7199ca}
+
+#deliBook .bookCheck {margin:0 auto;width:95%;height:40px;line-height:40px;background:#e5e5e5;padding:0 10px;font-size:14px;font-weight:bold;overflow:hidden}
+#deliBook .bookList {width:100%;position:relative;padding:15px}
+
+#deliBook .bookList .bookImg {float:left;width:25%}
+#deliBook .bookList .bookImg img {width:100%;border:1px solid #7199ca}
+#deliBook .bookList .bookInfo {float:right;width:70%;text-align:justify}
+#deliBook .bookList .bookInfo .bookOldPrice {text-decoration:line-through;font-size:12px;color:#999}
+#deliBook .bookList .bookInfo .bookCost {color:#666;font-weight:bold;font-size:12px}
+#deliBook .bookList .bookInfo .bookCost .bookPrice {color:#f00;font-size:16px}
+#deliBook .bookList .bookInfo .bookCost .salePer {color:#7199ca}
+#deliBook .bookList .bookInfo .bookCost .salePer:after {background:url(../images/ico_sale.png) no-repeat;width:25px;height:34px}
+
+.outBook {font-size:12px;font-weight:bold}
+#oneOrdBtn {margin-top:10px;width:100%;text-align:right}
+#oneOrdBtn ul li {width:45%;height:30px;line-height:30px;text-align:center;border:1px solid #7199ca}
+#oneOrdBtn ul li a {display:block;width:100%;height:100%;font-size:14px;font-weight:bold}
+
+#oneOrdBtn ul li:first-child a {color:#7199ca}
+#oneOrdBtn ul li:last-child {background:#7199ca;}
+#oneOrdBtn ul li:last-child a {color:#fff}
+
+#amountBox {padding:10px}
+#amountBox ul {border:1px solid #7199ca}
+#amountBox ul li {padding:10px;border-bottom:1px solid #8ad;background:#7199ca;color:#fff}
+#amountBox ul li:first-child {color:#7199ca;background:#fff}
+#amountBox ul li input {width:50%;float:right;border:0;background:none;text-align:right}
+#amountBox ul li input::placeholder {color:#fff;font-weight:bold}
+#amountBox ul li:first-child input::placeholder {color:#7199ca;font-weight:bold}
+#amountBox ul li:last-child input::placeholder {font-size:16px;font-weight:bold}
+#amountBox .free {font-size:12px;display:inline-block;color:#fff}
+#amountBox .prdPriceTxt {font-weight:bold}
+.ques {margin-left:5px;width:15px;height:15px;background:url(../images/ico_ques.png) no-repeat;background-size:15px;display:inline-block;text-indent:-9999em}
+
+.dayDeliv {padding:10px}
+.dayDeliv p {margin-top:5px;font-size:12px}
+
+#orderBtn {padding:10px}
+#orderBtn ul li {width:49%;height:40px;line-height:40px;text-align:center;border:1px solid #7199ca;font-weight:bold}
+#orderBtn ul li a {display:block;width:100%;height:100%;}
+#orderBtn ul li:first-child {float:left}
+#orderBtn ul li:first-child a {color:#7199ca}
+#orderBtn ul li:last-child {float:right}
+#orderBtn ul li:last-child a {background:#7199ca;color:#fff}

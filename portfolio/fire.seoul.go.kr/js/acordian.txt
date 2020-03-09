@@ -1,0 +1,23 @@
+$(document).ready(function(){	
+	
+	
+	$(".list>li").on("click",function(e){
+		e.preventDefault();
+
+		isOn = $(this).hasClass("on");
+
+		if(isOn){
+			$(".list>li").removeClass("on");
+			$(".list>li>div").stop().slideUp();
+		}else{
+			$(".list>li").removeClass("on");
+			$(this).addClass("on");
+
+			$(".list>li>div").stop().slideUp();
+			$(this).children("div").stop().slideDown();
+		}
+		
+	});	
+	
+	
+});
