@@ -19,6 +19,8 @@
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Vue.js library -->
+	<script src="https://unpkg.com/vue"></script>
 	<!-- JavaScript Libraries -->
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.waypoints.min.js"></script>
@@ -143,104 +145,23 @@
 			</div>
 			<!-- // creative filter menu -->
 
-			<div class="cr_container clearfix">
+			<div id="siteList" class="cr_container clearfix">
 
-				<div class="cr_box desktop">
-					<div class="cr_thumb"><img src="images/cr_list06.jpg" alt="PUBJ 포트폴리오" /></div>
-					<div class="cr_item"><p class="cr_title">PUBJ 포트폴리오</p>신규 웹사이트</div>
+				<div v-for="site in sites" :key="site.siteId" :class="site.sortClass">
+					<div class="cr_thumb"><img v-bind:src="site.img" :alt="site.siteName" /></div>
+					<div class="cr_item"><p class="cr_title">{{site.siteName}}</p>{{site.subScript}}</div>
 					<div class="cr_caption">
 						<dl class="clearfix">
 							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
+							<dd>{{site.myRole}}</dd>
 							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_desktop" title="Desktop Web"></i></dd>
+							<dd v-html="site.siteType"></dd>
 							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
+							<dd v-html="site.bw"></dd>
 						</dl>
 					</div>
-					<div class="cr_btn"><a href="ajax/pubj.html" class="open_pop" title="PUBJ 포트폴리오 웹사이트 개요보기">VIEW</a><a href="http://www.pubj.co.kr" target="_blank" title="PUBJ 개인포트폴리오 바로가기">LAUNCH</a></div>
+					<div class="cr_btn"><a :href="site.viewHref" :title="site.siteName+' 개요보기'" class="open_pop">VIEW</a><a :href="site.goHref" :title="site.siteName+' 바로가기'" :target="site.tKind">LAUNCH</a></div>
 				</div>
-
-				<div class="cr_box desktop">
-					<div class="cr_thumb"><img src="images/cr_list01.jpg" alt="서울소방재난본부" /></div>
-					<div class="cr_item"><p class="cr_title">서울소방재난본부</p>웹사이트 리뉴얼</div>
-					<div class="cr_caption">
-						<dl class="clearfix">
-							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
-							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_desktop" title="Desktop Web"></i></dd>
-							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
-						</dl>
-					</div>
-					<div class="cr_btn"><a href="ajax/fire.html" class="open_pop" title="서울소방재난본부 웹사이트 개요보기">VIEW</a><a href="http://www.pubj.co.kr/portfolio/fire.seoul.go.kr" target="_blank" title="서울소방재난본부 바로가기">LAUNCH</a></div>
-				</div>
-
-				<div class="cr_box desktop mobile resp">
-					<div class="cr_thumb"><img src="images/cr_list02.jpg" alt="동대문디자인페어" /></div>
-					<div class="cr_item"><p class="cr_title">동대문디자인페어</p>반응형 웹사이트</div>
-					<div class="cr_caption">
-						<dl class="clearfix">
-							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
-							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_desktop" title="Desktop Web"></i><i class="ico_type ico_mobile" title="Mobile Web"></i><i class="ico_type ico_resp" title="Responsive Web"></i></dd>
-							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
-						</dl>
-					</div>
-					<div class="cr_btn"><a href="ajax/ddp.html" class="open_pop" title="동대문디자인페어 웹사이트 개요보기">VIEW</a><a href="http://www.pubj.co.kr/portfolio/ddpdesignfair.or.kr" target="_blank" title="동대문디자인페어 바로가기">LAUNCH</a></div>
-				</div>
-
-				<div class="cr_box mobile">
-					<div class="cr_thumb"><img src="images/cr_list03.jpg" alt="영풍문고" /></div>
-					<div class="cr_item"><p class="cr_title">영풍문고</p>모바일웹 리뉴얼</div>
-					<div class="cr_caption">
-						<dl class="clearfix">
-							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
-							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_mobile" title="Mobile Web"></i></dd>
-							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
-						</dl>
-					</div>
-					<div class="cr_btn"><a href="ajax/ypbooks.html" class="open_pop" title="영풍문고 모바일웹 개요보기">VIEW</a><a href="javascript:void(window.open('http://www.pubj.co.kr/portfolio/ypbooks.co.kr/index.html','_blank', 'width=360, height=640, left=100, top=50, scrollbars=0, toolbar=0, menubar=no'))" title="영풍문고모바일 바로가기">LAUNCH</a></div>
-				</div>
-
-				<div class="cr_box desktop">
-					<div class="cr_thumb"><img src="images/cr_list04.jpg" alt="투썸플레이스" /></div>
-					<div class="cr_item"><p class="cr_title">투썸플레이스</p>웹사이트 리뉴얼</div>
-					<div class="cr_caption">
-						<dl class="clearfix">
-							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
-							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_desktop" title="Desktop Web"></i></dd>
-							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
-						</dl>
-					</div>
-					<div class="cr_btn"><a href="ajax/twosome.html" class="open_pop" title="투썸플레이스 웹사이트 개요보기">VIEW</a><a href="http://www.pubj.co.kr/portfolio/twosome.co.kr" target="_blank" title="투썸플레이스 웹사이트 바로가기">LAUNCH</a></div>
-				</div>
-
-				<div class="cr_box desktop mobile resp">
-					<div class="cr_thumb"><img src="images/cr_list05.jpg" alt="현대하이홈" /></div>
-					<div class="cr_item"><p class="cr_title">현대하이홈인테리어</p>웹사이트 리뉴얼</div>
-					<div class="cr_caption">
-						<dl class="clearfix">
-							<dt>_ ROLE :</dt>
-							<dd>CODING : 100% / DESIGN : 100%</dd>
-							<dt>_ TYPE :</dt>
-							<dd><i class="ico_type ico_desktop" title="Desktop Web"></i><i class="ico_type ico_mobile" title="Mobile Web"></i><i class="ico_type ico_resp" title="Responsive Web"></i></dd>
-							<dt>_ BROWSER :</dt>
-							<dd><i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i></dd>
-						</dl>
-					</div>
-					<div class="cr_btn"><a href="ajax/hhh.html" class="open_pop" title="현대하이홈인테리어 웹사이트 개요보기">VIEW</a><a href="http://www.pubj.co.kr/portfolio/hyundaihihome.nasoft.kr" target="_blank" title="현대하이홈인테리어 웹사이트 바로가기">LAUNCH</a></div>
-				</div>
-
 			</div>
 			<!-- // creative item -->
 		</div>
@@ -270,5 +191,80 @@
 </footer>
 <!-- // footer -->
 
+<script>
+var app = new Vue({
+	el: '#siteList',
+	data: {
+		sites : [
+		{siteId : 1,
+			sortClass:'cr_box desktop',
+			img :'images/cr_list06.jpg',
+			siteName :'PUBJ 포트폴리오',
+			subScript :'신규 웹사이트',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_desktop" title="Desktop Web"></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/pubj.html',
+			goHref :'http://www.pubj.co.kr',
+			tKind :'_blank'},
+    	{siteId : 2,
+			sortClass:'cr_box desktop',
+			img :'images/cr_list01.jpg',
+			siteName :'서울소방재난본부',
+			subScript :'웹사이트 리뉴얼',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_desktop" title="Desktop Web"></i></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/fire.html',
+			goHref :'http://www.pubj.co.kr/portfolio/fire.seoul.go.kr',
+			tKind :'_blank'},
+		{siteId : 3,
+			sortClass:'cr_box desktop mobile resp',
+			img :'images/cr_list02.jpg',
+			siteName :'동대문디자인페어',
+			subScript :'반응형 웹사이트',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_desktop" title="Desktop Web"></i><i class="ico_type ico_mobile" title="Mobile Web"></i><i class="ico_type ico_resp" title="Responsive Web"></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/ddp.html',
+			goHref :'http://www.pubj.co.kr/portfolio/ddpdesignfair.or.kr',
+			tKind :'_blank'},
+    	{siteId : 4,
+			sortClass:'cr_box mobile',
+			img :'images/cr_list03.jpg',
+			siteName :'영풍문고',
+			subScript :'모바일웹 리뉴얼',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_mobile" title="Mobile Web"></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/ypbooks.html',
+			goHref :"javascript:void(window.open('http://www.pubj.co.kr/portfolio/ypbooks.co.kr/index.html','','width=360, height=640, left=100, top=50, scrollbars=0, toolbar=0, menubar=no'))",
+			tKind :'_self'},
+    	{siteId : 5,
+			sortClass:'cr_box desktop',
+			img :'images/cr_list04.jpg',
+			siteName :'투썸플레이스',
+			subScript :'웹사이트 리뉴얼',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_desktop" title="Desktop Web"></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/twosome.html',
+			goHref :'http://www.pubj.co.kr/portfolio/twosome.co.kr',
+			tKind :'_blank'},
+    	{siteId : 6,
+			sortClass:'cr_box desktop',
+			img :'images/cr_list05.jpg',
+			siteName :'현대하이홈인테리어',
+			subScript :'웹사이트 리뉴얼',
+			myRole :'CODING : 100% / DESIGN : 100%',
+			siteType : '<i class="ico_type ico_desktop" title="Desktop Web"></i><i class="ico_type ico_mobile" title="Mobile Web"></i><i class="ico_type ico_resp" title="Responsive Web"></i>',
+			bw :'<i class="ico_browser ico_chrome"></i> <i class="ico_browser ico_firefox"></i> <i class="ico_browser ico_ie"></i> <i class="ico_browser ico_opera"></i>',
+			viewHref : 'ajax/hhh.html',
+			goHref :'http://www.pubj.co.kr/portfolio/hyundaihihome.nasoft.kr',
+			tKind :'_blank'}
+		]
+	}
+});
+</script>
 </body>
 </html>
